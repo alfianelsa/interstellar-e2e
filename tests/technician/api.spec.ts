@@ -4,6 +4,7 @@
 
 import { test, expect } from '@playwright/test';
 import { apiTechnician } from '../helpers/technician';
+import { menungguDeploy } from '../helpers/api';
 
 type Kasus = { id: string; judul: string; path: string; params?: Record<string, string>; tanpaData?: boolean };
 
@@ -118,17 +119,45 @@ test.describe('Technician (mobile API) / Detail transfer order', () => {
 });
 
 test.describe('Technician (mobile API) / Validasi parameter', () => {
-  // Server seharusnya menolak parameter wajib yang kosong dengan 4xx, bukan crash 500.
+  // Parameter wajib kosong harus ditolak 400 dengan pesan jelas, bukan crash 500.
+  // Dulu 500 (ditemukan 2026-11-05), sudah diperbaiki di kode be-technician 2026-11-05.
   test('TC-TEC-VAL-001 Transfer order tanpa is_sender ditolak dengan pesan jelas', async ({}, testInfo) => {
-    test.fixme(true, 'BUG: GET technician/v1/transfer-order tanpa ?is_sender → 500 "Internal Server Error!". Ditemukan 2026-11-05.');
+    menungguDeploy('be-technician');
     const api = await apiTechnician(testInfo);
     const r = await api.get('transfer-order');
-    expect(r.status).toBeLessThan(500);
+    expect(r.status).toBe(400);
+    expect(r.body?.message).toContain('is_sender');
   });
   test('TC-TEC-VAL-002 Checklist tanpa category ditolak dengan pesan jelas', async ({}, testInfo) => {
-    test.fixme(true, 'BUG: GET technician/v1/ticket-job/checklist tanpa ?category → 500 "Internal Server Error!". Ditemukan 2026-11-05.');
+    menungguDeploy('be-technician');
     const api = await apiTechnician(testInfo);
     const r = await api.get('ticket-job/checklist');
-    expect(r.status).toBeLessThan(500);
+    expect(r.status).toBe(400);
+    expect(r.body?.message).toContain('category');
+  });
+});
+
+test.describe('Technician (mobile API) / Keamanan', () => {
+  // Filter & search disisipkan mentah ke SQL (ditemukan 2026-11-05): payload ini dulu mengembalikan SEMUA tiket.
+  test("TC-TEC-SEC-001 Filter job category berisi payload SQL injection tidak membocorkan data", async ({}, testInfo) => {
+    menungguDeploy('be-technician');
+    const api = await apiTechnician(testInfo);
+    const r = await api.get('ticket-job', { 'job_category[0]': "zzE2E') OR ('1'='1" });
+    await cekSukses(r);
+    expect(daftar(r.body), 'payload diperlakukan sebagai nama kategori biasa → 0 tiket').toHaveLength(0);
+  });
+  test("TC-TEC-SEC-002 Filter customer berisi tanda kutip tidak membuat error", async ({}, testInfo) => {
+    menungguDeploy('be-technician');
+    const api = await apiTechnician(testInfo);
+    const r = await api.get('ticket-job', { 'customer[0]': "zzE2E'kutip" });
+    await cekSukses(r);
+    expect(daftar(r.body)).toHaveLength(0);
+  });
+  test("TC-TEC-SEC-003 Search ticket job berisi payload SQL injection aman", async ({}, testInfo) => {
+    menungguDeploy('be-technician');
+    const api = await apiTechnician(testInfo);
+    const r = await api.get('ticket-job', { search: "zzE2E' OR 'a' ILIKE 'a" });
+    await cekSukses(r);
+    expect(daftar(r.body)).toHaveLength(0);
   });
 });

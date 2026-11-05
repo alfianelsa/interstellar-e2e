@@ -100,26 +100,32 @@ Menambah halaman = tambah 1 objek di JSON (tidak perlu kode), lalu `npm run kata
 - **App ada di bawah path.** `baseURL` tiap project = `…/<path app>/`, test memanggil `page.goto('halaman')` **tanpa** `/` di depan.
 - **Error dari backend selalu HTTP 500.** `Request.error` di `interstellar-be-core/helper/request.js` membalas semua error untuk user (mis. "password salah") dengan 500. Test negatif yang sengaja memicu error mengizinkan 5xx di endpoint itu (`izinkan5xx`).
 
-## Temuan saat membuat test (2026-11-04)
+## Temuan & status perbaikan
 
-Ditandai `fixme` di katalog/test (dilewati, bukan dihapus) sampai diperbaiki:
+Bug yang ditemukan test ditandai `fixme` (dilewati, bukan dihapus). Status **Diperbaiki di kode** = sudah diperbaiki di repo module (2026-11-05) tapi **belum ter-deploy** ke dev; setelah deploy, hapus `fixme` / `menungguDeploy()` di test itu supaya perbaikannya ikut dijaga tiap malam.
 
-| Test | Temuan |
-|---|---|
-| TC-WH-ACC-005, TC-BO-ACC-007 | "Add team member": Submit tanpa memilih anggota langsung mengirim `PATCH user-and-team/team/<id>` (tidak ada validasi) |
-| TC-WH-RPT-001 | `GET warehouse-api/v1/reporting/population` → 500 |
-| TC-WH-RPT-008 | `GET warehouse-api/v1/reporting/stock/thermal` → 500 (tab Thermal di report Stock) |
-| TC-BO-MAP-001 | Google Maps di dev: "This page can't load Google Maps correctly." (API key/billing) |
-| TC-INV-LOGIN-001 | App invoice `/reconcile/` di dev tidak merender apa pun (`#root` kosong, tanpa error console) |
-| TC-WH-RPT-017 | Filter **Customer** di report Movement terminal → `GET reporting/movement/terminal?filter…` 500 (2026-11-05) |
-| TC-TEC-VAL-001 | API mobile `GET transfer-order` tanpa `?is_sender` → 500, seharusnya 4xx (2026-11-05) |
-| TC-TEC-VAL-002 | API mobile `GET ticket-job/checklist` tanpa `?category` → 500, seharusnya 4xx (2026-11-05) |
+Cek perbaikan sebelum menghapus `fixme` (mis. tepat setelah deploy, atau ke backend lokal lewat `BASE_HOST`):
+`E2E_CEK_PERBAIKAN=1 npx playwright test --project=warehouse tests/warehouse/keamanan.spec.ts --no-deps`
+
+| Test | Temuan | Status |
+|---|---|---|
+| TC-WH-SEC-001/002, TC-BO-SEC-001/002, TC-TEC-SEC-001..003 | **SQL injection**: search / filter disisipkan mentah ke SQL (146 titik, 5 backend). `'` → 500; `x' OR 'a' ILIKE 'a` mengembalikan semua data | Diperbaiki di kode |
+| TC-WH-SEC-003 | **Report warehouse bisa dibuka tanpa login** (`router.use(auth)` di tengah `reporting.routes.js`) | Diperbaiki di kode |
+| TC-WH-RPT-001 | Report Population 500 (urutan default salah kolom); `meta.total` kosong | Diperbaiki di kode |
+| TC-WH-RPT-008 | Report Stock Thermal 500 (data closure "." di-cast ke integer) | Diperbaiki di kode (+ validasi input di API mobile) |
+| TC-WH-RPT-017 | Semua filter report Movement 500 ("missing FROM-clause entry") | Diperbaiki di kode |
+| TC-WH-RPT-022 | Export Population tidak ada (FE memanggil endpoint yang tidak ada) | Diperbaiki di kode |
+| TC-WH-RPT-023 | Export Stock Thermal: judul & isi kolom bergeser; layar "OTS faktur" kosong, "Supply faktur" = population | Diperbaiki di kode |
+| TC-WH-ACC-005, TC-BO-ACC-007 | "Add team member" bisa di-submit tanpa anggota | Diperbaiki di kode (Submit nonaktif + validasi backend) |
+| TC-TEC-VAL-001/002 | API mobile crash 500 kalau `is_sender` / `category` kosong | Diperbaiki di kode (400) |
+| TC-INV-LOGIN-001 | App invoice kosong: file JS di dev build lama (`basename="/invoice"`) | Kode sudah benar → **build ulang + deploy** fe-invoice |
+| TC-BO-MAP-001 | Google Maps di dev: "This page can't load Google Maps correctly." | Belum (API key / billing Google Cloud) |
 
 **Rate limit backoffice = HTTP 500.** `interstellar-be-backoffice/routes/v1.js` membatasi 60 request/menit per token dan membalas kelebihannya lewat `Request.error` → **HTTP 500** "You can only make 60 requests every minutes." (terbukti 2026-11-05). Satu halaman backoffice memanggil 3–10 API, jadi test backoffice yang berjalan cepat (dan user yang aktif) bisa kena error acak. Seharusnya 429 + pesan di UI.
 
 Lain-lain (2026-11-05): dialog **edit** produk di Content Management → Catalog berjudul "New product".
 
-Lain-lain: form "New SLA" berjudul "Edit SLA" (typo UI); tombol "Add new Rack" di Rack management langsung membuat rack tanpa form/konfirmasi; semua error API dikirim sebagai HTTP 500.
+Lain-lain: login API invoice mengharapkan password terenkripsi AES (dari FE); password biasa dihitung **password salah** (menambah `login_attempt`) — jangan panggil API login invoice langsung. Form "New SLA" berjudul "Edit SLA" (typo UI); tombol "Add new Rack" di Rack management langsung membuat rack tanpa form/konfirmasi; semua error API dikirim sebagai HTTP 500.
 
 ## Alur bikin test baru (selain katalog)
 

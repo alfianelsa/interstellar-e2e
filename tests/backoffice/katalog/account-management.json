@@ -149,10 +149,9 @@
       "url": "account-management/team",
       "tombol": "New team member",
       "judulForm": "Add team member",
-      "validasi": [
-        "Request timeout"
-      ],
-      "fixme": "BUG: Submit \"Add team member\" tanpa memilih anggota langsung mengirim PATCH user-and-team/team/<id> (tidak ada validasi). Ditemukan 2026-11-04, juga di warehouse."
+      "validasi": [],
+      "fixme": "BUG: \"Add team member\" bisa di-submit tanpa anggota (PATCH user-and-team/team/<id> tanpa validasi). Ditemukan 2026-11-04. Sudah diperbaiki di kode (FE: Submit nonaktif; BE: validator members min 1) 2026-11-05 — hapus fixme ini setelah ter-deploy ke dev.",
+      "submitNonaktif": true
     },
     {
       "id": "BO-ACC-008",

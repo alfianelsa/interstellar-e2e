@@ -6,7 +6,7 @@ import { test, expect } from '../helpers/test';
 
 test.describe('Login', () => {
   test('TC-INV-LOGIN-001 Halaman login invoice tampil', async ({ page }) => {
-    test.fixme(true, 'BUG/DEPLOY: /reconcile/login di dev kosong (#root tidak dirender, tanpa error console). Ditemukan 2026-11-04.');
+    test.fixme(true, 'DEPLOY: file JS di dev masih build lama (BrowserRouter basename="/invoice", app dibuka di /reconcile/). Kode repo sudah benar → build ulang + deploy fe-invoice. /reconcile/login di dev kosong (#root tidak dirender, tanpa error console). Ditemukan 2026-11-04.');
     await page.goto('login');
     await expect(page.getByText('Welcome back! Please enter your details.')).toBeVisible();
     await expect(page.getByPlaceholder('Enter your email')).toBeVisible();

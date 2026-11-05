@@ -24,7 +24,7 @@
         "Pm quantity",
         "Is success quantity"
       ],
-      "fixme": "BUG backend: GET warehouse-api/v1/reporting/population mengembalikan 500. Ditemukan 2026-11-04."
+      "fixme": "BUG: report Population 500 (urutan default salah kolom). Ditemukan 2026-11-04. Sudah diperbaiki di kode be-warehouse 2026-11-05 — hapus fixme setelah ter-deploy ke dev."
     },
     {
       "id": "WH-RPT-002",
@@ -259,7 +259,7 @@
           "url": "report/stock/terminal$"
         }
       ],
-      "fixme": "BUG backend: GET warehouse-api/v1/reporting/stock/thermal mengembalikan 500 (tab Thermal). Ditemukan 2026-11-04."
+      "fixme": "BUG: report Stock Thermal 500 (data closure \".\" di-cast ke integer). Ditemukan 2026-11-04. Sudah diperbaiki di kode be-core 2026-11-05 — hapus fixme setelah ter-deploy ke dev."
     },
     {
       "id": "WH-RPT-009",
@@ -335,7 +335,7 @@
       "judul": "Filter report Movement terminal berdasarkan Customer",
       "url": "report/movement/terminal",
       "field": "Customer",
-      "fixme": "BUG: filter Customer → API 500 /reporting/movement/terminal?page=1&search=&type=terminal&filter[0][field]=$project.ac… membalas 500. Ditemukan 2026-11-05."
+      "fixme": "BUG: filter report Movement 500 (\"missing FROM-clause entry\"). Ditemukan 2026-11-05. Sudah diperbaiki di kode be-warehouse 2026-11-05 — hapus fixme setelah ter-deploy ke dev."
     },
     {
       "id": "WH-RPT-018",
