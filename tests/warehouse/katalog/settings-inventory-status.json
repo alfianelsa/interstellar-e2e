@@ -1,0 +1,463 @@
+{
+  "modul": "Warehouse / Settings Inventory Status",
+  "kasus": [
+    {
+      "id": "WH-SIS-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Device type tampil",
+      "url": "settings/inventory-status/device-type",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Device type",
+        "List of device type."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type",
+        "Import",
+        "New device type",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Device type",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-002",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Ownership tampil",
+      "url": "settings/inventory-status/ownership",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Ownership type",
+        "List of ownership type."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type",
+        "Import",
+        "New ownership",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Ownership",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-003",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Condition tampil",
+      "url": "settings/inventory-status/condition",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Condition",
+        "List of condition."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type"
+      ],
+      "kolom": [
+        "Condition",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-004",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Location tampil",
+      "url": "settings/inventory-status/location",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Location",
+        "List of Location."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type"
+      ],
+      "kolom": [
+        "Location",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-005",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Availability tampil",
+      "url": "settings/inventory-status/availability",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Availability",
+        "List of terminal’s availability status."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type",
+        "New availability",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Availability",
+        "Data property",
+        "Status",
+        "Created date",
+        "Terminal status (and)"
+      ]
+    },
+    {
+      "id": "WH-SIS-006",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Provider tampil",
+      "url": "settings/inventory-status/provider",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Provider",
+        "List of Provider."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type",
+        "Import",
+        "New Provider",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Provider",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-007",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Network type tampil",
+      "url": "settings/inventory-status/network-type",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Inventory Status",
+        "Set things related to the Inventory here.",
+        "Network type",
+        "List of network type."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location",
+        "Availability",
+        "Provider",
+        "Network type",
+        "Import",
+        "New network type",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Network type",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SIS-008",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Pindah antar tab Inventory Status",
+      "url": "settings/inventory-status/device-type",
+      "tab": [
+        {
+          "nama": "Ownership",
+          "url": "settings/inventory-status/ownership$"
+        },
+        {
+          "nama": "Condition",
+          "url": "settings/inventory-status/condition$"
+        },
+        {
+          "nama": "Location",
+          "url": "settings/inventory-status/location$"
+        },
+        {
+          "nama": "Availability",
+          "url": "settings/inventory-status/availability$"
+        },
+        {
+          "nama": "Provider",
+          "url": "settings/inventory-status/provider$"
+        },
+        {
+          "nama": "Network type",
+          "url": "settings/inventory-status/network-type$"
+        },
+        {
+          "nama": "Device type",
+          "url": "settings/inventory-status/device-type$"
+        }
+      ]
+    },
+    {
+      "id": "WH-SIS-009",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah Device type menolak data kosong",
+      "url": "settings/inventory-status/device-type",
+      "tombol": "New device type",
+      "judulForm": "Add device type",
+      "validasi": [
+        "Device type a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SIS-010",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah Ownership menolak data kosong",
+      "url": "settings/inventory-status/ownership",
+      "tombol": "New ownership",
+      "judulForm": "Add Ownership",
+      "validasi": [
+        "Ownership is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SIS-011",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah Availability menolak data kosong",
+      "url": "settings/inventory-status/availability",
+      "tombol": "New availability",
+      "judulForm": "Add Availability",
+      "validasi": [
+        "Availability is a required field",
+        "Location is required",
+        "Condition is required"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SIS-012",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah Provider menolak data kosong",
+      "url": "settings/inventory-status/provider",
+      "tombol": "New Provider",
+      "judulForm": "Add Provider",
+      "validasi": [
+        "SIM card type is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SIS-013",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah Network type menolak data kosong",
+      "url": "settings/inventory-status/network-type",
+      "tombol": "New network type",
+      "judulForm": "Add network type",
+      "validasi": [
+        "Network type is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SIS-014",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Device type tampil dari baris pertama",
+      "url": "settings/inventory-status/device-type",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/device-type/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Device type*"
+      ]
+    },
+    {
+      "id": "WH-SIS-015",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Ownership tampil dari baris pertama",
+      "url": "settings/inventory-status/ownership",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/ownership/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Ownership*"
+      ]
+    },
+    {
+      "id": "WH-SIS-016",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Condition tampil dari baris pertama",
+      "url": "settings/inventory-status/condition",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/condition/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Condition*"
+      ]
+    },
+    {
+      "id": "WH-SIS-017",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Location tampil dari baris pertama",
+      "url": "settings/inventory-status/location",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/location/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Location status*"
+      ]
+    },
+    {
+      "id": "WH-SIS-018",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Availability tampil dari baris pertama",
+      "url": "settings/inventory-status/availability",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/availability/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Availability*",
+        "Location and condition",
+        "Location*",
+        "Condition*"
+      ]
+    },
+    {
+      "id": "WH-SIS-019",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Provider tampil dari baris pertama",
+      "url": "settings/inventory-status/provider",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/sim-card-type/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Provider*"
+      ]
+    },
+    {
+      "id": "WH-SIS-020",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Network type tampil dari baris pertama",
+      "url": "settings/inventory-status/network-type",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/inventory-status/network-type/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Network type*"
+      ]
+    }
+  ]
+}

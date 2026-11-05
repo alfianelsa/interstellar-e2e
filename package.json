@@ -1,0 +1,30 @@
+{
+  "name": "interstellar-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "E2E test semua app web Interstellar (Playwright)",
+  "scripts": {
+    "test": "playwright test",
+    "test:warehouse": "playwright test --project=warehouse",
+    "test:backoffice": "playwright test --project=backoffice",
+    "test:content-management": "playwright test --project=content-management",
+    "test:merchant": "playwright test --project=merchant",
+    "test:lintas-app": "playwright test --project=lintas-app",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "import": "node scripts/import-testcases.mjs",
+    "katalog:excel": "node scripts/katalog-ke-excel.mjs",
+    "cakupan": "node scripts/cakupan-endpoint.mjs",
+    "endpoint": "node scripts/daftar-endpoint.mjs",
+    "test:technician": "playwright test --project=technician"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^24.19.1",
+    "dotenv": "^18.0.5",
+    "imapflow": "^2.4.0",
+    "mailparser": "^3.9.38",
+    "read-excel-file": "^9.3.10",
+    "write-excel-file": "^2.3.10"
+  }
+}

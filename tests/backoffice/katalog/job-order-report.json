@@ -1,0 +1,210 @@
+{
+  "modul": "Backoffice / Job Order Report",
+  "kasus": [
+    {
+      "id": "BO-JOR-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Report Daily ticket report tampil",
+      "url": "job-order-report/daily-ticket-report",
+      "teks": [
+        "Job order report",
+        "Daily ticket report",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Daily ticket report",
+        "Daily ticket report - IS",
+        "Daily ticket report - Case ID",
+        "Daily ticket report - WD",
+        "Export",
+        "Created",
+        "Completed",
+        "In progress",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Customer",
+        "Created date",
+        "Assign date",
+        "Completed date",
+        "Completion type",
+        "Job category",
+        "Issue",
+        "Location asset",
+        "TID",
+        "MID",
+        "Merchant name"
+      ]
+    },
+    {
+      "id": "BO-JOR-002",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Report Daily ticket report - IS tampil",
+      "url": "job-order-report/daily-ticket-report-is-rp",
+      "teks": [
+        "Job order report",
+        "Daily ticket report",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Daily ticket report",
+        "Daily ticket report - IS",
+        "Daily ticket report - Case ID",
+        "Daily ticket report - WD",
+        "Export",
+        "Created",
+        "Completed",
+        "In progress",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Customer",
+        "Created date",
+        "Assign date",
+        "Completed date",
+        "Completion type",
+        "Job category",
+        "Issue",
+        "Location asset",
+        "TID",
+        "MID",
+        "Merchant name"
+      ]
+    },
+    {
+      "id": "BO-JOR-003",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Report Daily ticket report - Case ID tampil",
+      "url": "job-order-report/daily-ticket-report-case-id",
+      "teks": [
+        "Job order report",
+        "Daily ticket report",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Daily ticket report",
+        "Daily ticket report - IS",
+        "Daily ticket report - Case ID",
+        "Daily ticket report - WD",
+        "Export",
+        "Created",
+        "Completed",
+        "In progress",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Customer",
+        "Created date",
+        "Assign date",
+        "Completed date",
+        "Completion type",
+        "Job category",
+        "Issue",
+        "Location asset",
+        "TID",
+        "MID",
+        "Merchant name"
+      ]
+    },
+    {
+      "id": "BO-JOR-004",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Report Daily ticket report - WD tampil",
+      "url": "job-order-report/daily-ticket-report-wd",
+      "teks": [
+        "Job order report",
+        "Daily ticket report",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Daily ticket report",
+        "Daily ticket report - IS",
+        "Daily ticket report - Case ID",
+        "Daily ticket report - WD",
+        "Export",
+        "Created",
+        "Completed",
+        "In progress",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Customer",
+        "Created date",
+        "Assign date",
+        "Completed date",
+        "Completion type",
+        "Job category",
+        "Issue",
+        "Location asset",
+        "TID",
+        "MID",
+        "Merchant name"
+      ]
+    },
+    {
+      "id": "BO-JOR-005",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Pindah antar jenis daily ticket report",
+      "url": "job-order-report/daily-ticket-report",
+      "tab": [
+        {
+          "nama": "Daily ticket report - IS",
+          "url": "daily-ticket-report-is-rp$"
+        },
+        {
+          "nama": "Daily ticket report - Case ID",
+          "url": "daily-ticket-report-case-id$"
+        },
+        {
+          "nama": "Daily ticket report - WD",
+          "url": "daily-ticket-report-wd$"
+        },
+        {
+          "nama": "Daily ticket report",
+          "url": "daily-ticket-report$"
+        }
+      ]
+    },
+    {
+      "id": "BO-JOR-006",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export report Daily ticket report menghasilkan file Excel",
+      "url": "job-order-report/daily-ticket-report",
+      "file": "^daily-ticket-report\\.xlsx$"
+    },
+    {
+      "id": "BO-JOR-007",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export report Daily ticket report - IS menghasilkan file Excel",
+      "url": "job-order-report/daily-ticket-report-is-rp",
+      "file": "^daily-ticket-report\\.xlsx$"
+    },
+    {
+      "id": "BO-JOR-008",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export report Daily ticket report - Case ID menghasilkan file Excel",
+      "url": "job-order-report/daily-ticket-report-case-id",
+      "file": "^daily-ticket-report\\.xlsx$"
+    },
+    {
+      "id": "BO-JOR-009",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export report Daily ticket report - WD menghasilkan file Excel",
+      "url": "job-order-report/daily-ticket-report-wd",
+      "file": "^daily-ticket-report\\.xlsx$"
+    }
+  ]
+}

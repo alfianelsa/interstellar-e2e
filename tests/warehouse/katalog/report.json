@@ -1,0 +1,373 @@
+{
+  "modul": "Warehouse / Report",
+  "kasus": [
+    {
+      "id": "WH-RPT-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Report Population tampil",
+      "url": "report/population",
+      "teks": [
+        "Warehouse report",
+        "Population"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Export"
+      ],
+      "kolom": [
+        "Customer/Bank",
+        "project",
+        "Pm quantity",
+        "Is success quantity"
+      ],
+      "fixme": "BUG backend: GET warehouse-api/v1/reporting/population mengembalikan 500. Ditemukan 2026-11-04."
+    },
+    {
+      "id": "WH-RPT-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Report Stock terminal tampil",
+      "url": "report/stock/terminal",
+      "teks": [
+        "Warehouse report",
+        "Terminal"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Terminal",
+        "SIM Card",
+        "SAM Card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "Customer/Bank",
+        "project",
+        "Preparation",
+        "Normal stock WH",
+        "Stock damage WH",
+        "In transit",
+        "Technician",
+        "Merchant",
+        "Population",
+        "Inactive",
+        "Scrap",
+        "Lost"
+      ]
+    },
+    {
+      "id": "WH-RPT-003",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Report Stock SIM card tampil",
+      "url": "report/stock/sim-card",
+      "teks": [
+        "Warehouse report",
+        "SIM card"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Terminal",
+        "SIM Card",
+        "SAM Card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "Customer/Bank",
+        "project",
+        "Preparation",
+        "Normal stock WH",
+        "Stock damage WH",
+        "In transit",
+        "Technician",
+        "Merchant",
+        "Population",
+        "Inactive",
+        "Lost"
+      ]
+    },
+    {
+      "id": "WH-RPT-004",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Report Movement terminal tampil",
+      "url": "report/movement/terminal",
+      "teks": [
+        "Warehouse report",
+        "Terminal"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Terminal",
+        "SIM Card",
+        "SAM Card",
+        "Thermal",
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "SN",
+        "Signature type",
+        "Signature number",
+        "Customer/Bank",
+        "TID",
+        "MID",
+        "Merchant name",
+        "Terminal name",
+        "Rack / bin",
+        "EDC condition status",
+        "Location Status",
+        "Movement Status"
+      ]
+    },
+    {
+      "id": "WH-RPT-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Report In/out warehouse terminal tampil",
+      "url": "report/in-out/warehouse/terminal",
+      "teks": [
+        "Warehouse report",
+        "Terminal"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Warehouse",
+        "Technician",
+        "Terminal",
+        "SIM Card",
+        "SAM Card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "WHB Location",
+        "Customer/Bank",
+        "Project",
+        "Customer region",
+        "EDC type",
+        "in",
+        "out",
+        "balance"
+      ]
+    },
+    {
+      "id": "WH-RPT-006",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Report In/out technician terminal tampil",
+      "url": "report/in-out/technician/terminal",
+      "teks": [
+        "Warehouse report",
+        "Terminal"
+      ],
+      "tombol": [
+        "Stock",
+        "Movement",
+        "In / out",
+        "Stock opname",
+        "Warehouse",
+        "Technician",
+        "Terminal",
+        "SIM Card",
+        "SAM Card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "Technician",
+        "WHB Location",
+        "Customer/Bank",
+        "Project",
+        "Customer region",
+        "EDC type",
+        "in",
+        "out"
+      ]
+    },
+    {
+      "id": "WH-RPT-007",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar jenis report",
+      "url": "report/stock/terminal",
+      "tab": [
+        {
+          "nama": "Movement",
+          "url": "report/movement"
+        },
+        {
+          "nama": "In / out",
+          "url": "report/in-out"
+        },
+        {
+          "nama": "Stock",
+          "url": "report/stock"
+        }
+      ]
+    },
+    {
+      "id": "WH-RPT-008",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Pindah antar jenis inventory di report stock",
+      "url": "report/stock/terminal",
+      "tab": [
+        {
+          "nama": "SIM Card",
+          "url": "report/stock/sim-card$"
+        },
+        {
+          "nama": "SAM Card",
+          "url": "report/stock/sam-card$"
+        },
+        {
+          "nama": "Peripheral",
+          "url": "report/stock/peripheral$"
+        },
+        {
+          "nama": "Thermal",
+          "url": "report/stock/thermal$"
+        },
+        {
+          "nama": "Terminal",
+          "url": "report/stock/terminal$"
+        }
+      ],
+      "fixme": "BUG backend: GET warehouse-api/v1/reporting/stock/thermal mengembalikan 500 (tab Thermal). Ditemukan 2026-11-04."
+    },
+    {
+      "id": "WH-RPT-009",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Buka report Stock opname",
+      "url": "report/stock/terminal",
+      "tab": [
+        {
+          "nama": "Stock opname",
+          "url": "report/so-report/terminal$"
+        }
+      ]
+    },
+    {
+      "id": "WH-RPT-010",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari di report movement yang tidak ada menampilkan tabel kosong",
+      "url": "report/movement/terminal"
+    },
+    {
+      "id": "WH-RPT-011",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export report Stock terminal menghasilkan file Excel",
+      "url": "report/stock/terminal",
+      "file": "^report-stock-terminal\\.xlsx$"
+    },
+    {
+      "id": "WH-RPT-012",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter report Stock terminal berdasarkan Project",
+      "url": "report/stock/terminal",
+      "field": "Project"
+    },
+    {
+      "id": "WH-RPT-013",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export report Stock SIM card menghasilkan file Excel",
+      "url": "report/stock/sim-card",
+      "file": "^report-stock-simcard\\.xlsx$"
+    },
+    {
+      "id": "WH-RPT-014",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter report Stock SIM card berdasarkan Project",
+      "url": "report/stock/sim-card",
+      "field": "Project"
+    },
+    {
+      "id": "WH-RPT-015",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export report Movement terminal menghasilkan file Excel",
+      "url": "report/movement/terminal",
+      "file": "^export-movement-terminal\\.xlsx$"
+    },
+    {
+      "id": "WH-RPT-016",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya report Movement terminal menampilkan data lain",
+      "url": "report/movement/terminal"
+    },
+    {
+      "id": "WH-RPT-017",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter report Movement terminal berdasarkan Customer",
+      "url": "report/movement/terminal",
+      "field": "Customer",
+      "fixme": "BUG: filter Customer → API 500 /reporting/movement/terminal?page=1&search=&type=terminal&filter[0][field]=$project.ac… membalas 500. Ditemukan 2026-11-05."
+    },
+    {
+      "id": "WH-RPT-018",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export report In/out warehouse terminal menghasilkan file Excel",
+      "url": "report/in-out/warehouse/terminal",
+      "file": "^export-in-out-terminal-warehouse\\.xlsx$"
+    },
+    {
+      "id": "WH-RPT-019",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter report In/out warehouse terminal berdasarkan Project",
+      "url": "report/in-out/warehouse/terminal",
+      "field": "Project"
+    },
+    {
+      "id": "WH-RPT-020",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export report In/out technician terminal menghasilkan file Excel",
+      "url": "report/in-out/technician/terminal",
+      "file": "^export-in-out-terminal-technician\\.xlsx$"
+    },
+    {
+      "id": "WH-RPT-021",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter report In/out technician terminal berdasarkan Technician",
+      "url": "report/in-out/technician/terminal",
+      "field": "Technician"
+    }
+  ]
+}

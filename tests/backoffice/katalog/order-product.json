@@ -1,0 +1,27 @@
+{
+  "modul": "Backoffice / Order Product",
+  "kasus": [
+    {
+      "id": "BO-OP-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Product order tampil",
+      "url": "order-product",
+      "teks": [
+        "Product order",
+        "Manage your team and preferences here.",
+        "Order",
+        "List of catalog product to sell."
+      ],
+      "tombol": [
+        "View all",
+        "New"
+      ],
+      "kolom": [
+        "Order id",
+        "Merchant",
+        "Status"
+      ]
+    }
+  ]
+}

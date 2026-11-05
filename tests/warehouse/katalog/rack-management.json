@@ -1,0 +1,31 @@
+{
+  "modul": "Warehouse / Rack Management",
+  "kasus": [
+    {
+      "id": "WH-RACK-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Rack management tampil",
+      "url": "rack-management",
+      "teks": [
+        "Rack management",
+        "All Warehouse",
+        "Manage rack in this warehouse.",
+        "List of rack"
+      ],
+      "tombol": [
+        "Add new Rack"
+      ],
+      "kolom": [
+        "Rack"
+      ]
+    },
+    {
+      "id": "WH-RACK-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari rack management yang tidak ada menampilkan tabel kosong",
+      "url": "rack-management"
+    }
+  ]
+}

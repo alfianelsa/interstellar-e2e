@@ -1,0 +1,34 @@
+{
+  "modul": "Warehouse / Order Product",
+  "kasus": [
+    {
+      "id": "WH-OP-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Product order tampil",
+      "url": "order-product",
+      "teks": [
+        "Product order",
+        "Manage your team and preferences here.",
+        "Order",
+        "List of catalog product to sell."
+      ],
+      "tombol": [
+        "View all",
+        "Preparation"
+      ],
+      "kolom": [
+        "Order id",
+        "Merchant",
+        "Status"
+      ]
+    },
+    {
+      "id": "WH-OP-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari product order yang tidak ada menampilkan tabel kosong",
+      "url": "order-product"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "modul": "Backoffice / Custom Report",
+  "kasus": [
+    {
+      "id": "BO-CRPT-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman My report tampil",
+      "url": "custom-report/my-report",
+      "teks": [
+        "Custom report",
+        "View your report and shared with you.",
+        "My Report",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "My report",
+        "Shared with me",
+        "New report",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Reporting name",
+        "Created by",
+        "Created date",
+        "Last update by",
+        "Last update date"
+      ]
+    },
+    {
+      "id": "BO-CRPT-002",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Shared with me tampil",
+      "url": "custom-report/shared-with-me",
+      "teks": [
+        "Custom report",
+        "View your report and shared with you.",
+        "Share with me",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "My report",
+        "Shared with me"
+      ],
+      "kolom": [
+        "Reporting name",
+        "Created by",
+        "Created date",
+        "Last update by",
+        "Last update date"
+      ]
+    },
+    {
+      "id": "BO-CRPT-003",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Pindah tab My report dan Shared with me",
+      "url": "custom-report/my-report",
+      "tab": [
+        {
+          "nama": "Shared with me",
+          "url": "custom-report/shared-with-me$"
+        },
+        {
+          "nama": "My report",
+          "url": "custom-report/my-report$"
+        }
+      ]
+    },
+    {
+      "id": "BO-CRPT-004",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form report baru menolak data kosong",
+      "url": "custom-report/my-report",
+      "tombol": "New report",
+      "judulForm": "Add new report",
+      "validasi": [
+        "Report name is a required field",
+        "Report link is a required filed"
+      ],
+      "tutup": "Close"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "modul": "Warehouse / Stock Opname",
+  "kasus": [
+    {
+      "id": "WH-SO-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Stock opname tampil",
+      "url": "stock-opname-management/stock-opname",
+      "teks": [
+        "Stock opname",
+        "Manage inventory by stock opname here.",
+        "List of stock opname",
+        "List of your stock opname history."
+      ],
+      "tombol": [
+        "Stock opname",
+        "View all",
+        "Attention",
+        "Filters"
+      ],
+      "kolom": [
+        "Stock opname ID",
+        "Created date",
+        "Warehouse",
+        "Created by",
+        "Status"
+      ]
+    },
+    {
+      "id": "WH-SO-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari stock opname yang tidak ada menampilkan tabel kosong",
+      "url": "stock-opname-management/stock-opname"
+    },
+    {
+      "id": "WH-SO-003",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form stock opname baru menolak data kosong",
+      "url": "stock-opname-management/stock-opname",
+      "tombol": "Stock opname",
+      "judulForm": "New stock opname",
+      "validasi": [
+        "Stock opname ID is required",
+        "Only warehouse admin can create stock opname"
+      ]
+    },
+    {
+      "id": "WH-SO-004",
+      "jenis": "tab",
+      "prioritas": "P3",
+      "judul": "Filter Attention dan View all stock opname",
+      "url": "stock-opname-management/stock-opname",
+      "tab": [
+        {
+          "nama": "Attention",
+          "url": "stock-opname"
+        },
+        {
+          "nama": "View all",
+          "url": "stock-opname"
+        }
+      ]
+    },
+    {
+      "id": "WH-SO-005",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Stock opname tampil dari baris pertama",
+      "url": "stock-opname-management/stock-opname",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/stock-opname/rack/[^/]+$",
+      "urlDetail": "stock-opname-management/[^/]+",
+      "teks": [
+        "Opname inventory",
+        "Manage your inventory here.",
+        "List of rack and bin",
+        "Opname your inventory by rack and bin.",
+        "Summary"
+      ]
+    },
+    {
+      "id": "WH-SO-006",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Stock opname menampilkan data lain",
+      "url": "stock-opname-management/stock-opname"
+    },
+    {
+      "id": "WH-SO-007",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Stock opname berdasarkan Warehouse",
+      "url": "stock-opname-management/stock-opname",
+      "field": "Warehouse",
+      "kolom": "Warehouse"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "modul": "Content Management / Chatbot",
+  "kasus": [
+    {
+      "id": "CM-BOT-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Frequently asked question tampil",
+      "url": "FAQ",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Frequently asked question",
+        "List of question and the answer."
+      ],
+      "tombol": [
+        "Active",
+        "Archived",
+        "Add more content"
+      ]
+    },
+    {
+      "id": "CM-BOT-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Scenario tampil",
+      "url": "scenario",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Scenario",
+        "Set the decision tree of chatbot for the conversation."
+      ],
+      "tombol": [
+        "New scenario",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Scenario name",
+        "Customer",
+        "Terminal"
+      ]
+    },
+    {
+      "id": "CM-BOT-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Email tampil",
+      "url": "email",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Email",
+        "Set email to send transcript from the chatbot conversation."
+      ],
+      "tombol": [
+        "New email",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Email address",
+        "Set as active"
+      ]
+    },
+    {
+      "id": "CM-BOT-004",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Guidance book tampil",
+      "url": "guidance-book",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Guidance book",
+        "List of guidance book."
+      ],
+      "tombol": [
+        "New guidance book",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Guidance book"
+      ]
+    },
+    {
+      "id": "CM-BOT-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Chatbot tampil",
+      "url": "report-chatbot",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Chatbot"
+      ],
+      "tombol": [
+        "Export",
+        "Filters"
+      ],
+      "kolom": [
+        "Date",
+        "Customer/Bank",
+        "Terminal name",
+        "SN",
+        "TID",
+        "MID",
+        "Merchant Name",
+        "Phone Number",
+        "Scenario name",
+        "Status",
+        "Created ticket"
+      ]
+    },
+    {
+      "id": "CM-BOT-006",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari frequently asked question yang tidak ada menampilkan tabel kosong",
+      "url": "FAQ"
+    },
+    {
+      "id": "CM-BOT-007",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari scenario yang tidak ada menampilkan tabel kosong",
+      "url": "scenario"
+    },
+    {
+      "id": "CM-BOT-008",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari email yang tidak ada menampilkan tabel kosong",
+      "url": "email"
+    },
+    {
+      "id": "CM-BOT-009",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari guidance book yang tidak ada menampilkan tabel kosong",
+      "url": "guidance-book"
+    },
+    {
+      "id": "CM-BOT-010",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari chatbot yang tidak ada menampilkan tabel kosong",
+      "url": "report-chatbot"
+    },
+    {
+      "id": "CM-BOT-011",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form scenario baru menolak data kosong",
+      "url": "scenario",
+      "tombol": "New scenario",
+      "judulForm": "Add new scenario",
+      "validasi": [
+        "Scenario Name is a required field"
+      ]
+    },
+    {
+      "id": "CM-BOT-012",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form email baru menolak data kosong",
+      "url": "email",
+      "tombol": "New email",
+      "judulForm": "New email address",
+      "validasi": [
+        "Email Address is a required field"
+      ]
+    },
+    {
+      "id": "CM-BOT-013",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form guidance book baru menolak data kosong",
+      "url": "guidance-book",
+      "tombol": "New guidance book",
+      "judulForm": "Upload and attach files",
+      "validasi": [
+        "Guide book title is a required field",
+        "Guide book PDF is a required field",
+        "Display image is a required field"
+      ]
+    },
+    {
+      "id": "CM-BOT-014",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Scenario berdasarkan Customer",
+      "url": "scenario",
+      "field": "Customer"
+    },
+    {
+      "id": "CM-BOT-015",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Chatbot menghasilkan file Excel",
+      "url": "report-chatbot",
+      "file": "^export-chatbot\\.xlsx$"
+    },
+    {
+      "id": "CM-BOT-016",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Chatbot berdasarkan SN",
+      "url": "report-chatbot",
+      "field": "SN"
+    }
+  ]
+}

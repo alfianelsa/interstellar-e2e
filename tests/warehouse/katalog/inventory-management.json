@@ -1,0 +1,587 @@
+{
+  "modul": "Warehouse / Inventory Management",
+  "kasus": [
+    {
+      "id": "WH-INV-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Terminal tampil",
+      "url": "inventory-management/terminal",
+      "teks": [
+        "Inventory management",
+        "Manage inventory on the system.",
+        "Terminal management",
+        "List of terminal on the system."
+      ],
+      "tombol": [
+        "Terminal",
+        "SIM card",
+        "SAM card",
+        "Peripheral",
+        "Thermal",
+        "Part number settings",
+        "Export",
+        "Import",
+        "New terminal",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Terminal name",
+        "Part number",
+        "Serial Number",
+        "TID SN",
+        "MID",
+        "Project",
+        "Customer",
+        "Availability",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location"
+      ]
+    },
+    {
+      "id": "WH-INV-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman SIM card tampil",
+      "url": "inventory-management/sim-card",
+      "teks": [
+        "Inventory management",
+        "Manage inventory on the system.",
+        "SIM card management",
+        "Manage your SIM card."
+      ],
+      "tombol": [
+        "Terminal",
+        "SIM card",
+        "SAM card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Import",
+        "New SIM card",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "ICCID",
+        "Serial Number",
+        "MSISDN",
+        "Provider",
+        "Customer",
+        "Condition",
+        "Location",
+        "Population",
+        "Availability",
+        "Terminal serial number",
+        "Rack & bin",
+        "On technician"
+      ]
+    },
+    {
+      "id": "WH-INV-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman SAM card tampil",
+      "url": "inventory-management/sam-card",
+      "teks": [
+        "Inventory management",
+        "Manage inventory on the system.",
+        "SAM card management",
+        "Manage your SAM card."
+      ],
+      "tombol": [
+        "Terminal",
+        "SIM card",
+        "SAM card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Import",
+        "New SAM card",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "UID",
+        "Customer",
+        "Location",
+        "Condition",
+        "Population",
+        "Terminal serial number",
+        "Rack & bin",
+        "On technician"
+      ]
+    },
+    {
+      "id": "WH-INV-004",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Peripheral tampil",
+      "url": "inventory-management/peripheral",
+      "teks": [
+        "Inventory management",
+        "Manage inventory on the system.",
+        "Peripheral",
+        "List of peripheral on the system."
+      ],
+      "tombol": [
+        "Terminal",
+        "SIM card",
+        "SAM card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Import",
+        "New peripheral",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Peripheral name",
+        "Terminal",
+        "Customer",
+        "Quantity",
+        "Location",
+        "Condition",
+        "Population",
+        "Rack & bin"
+      ]
+    },
+    {
+      "id": "WH-INV-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Thermal tampil",
+      "url": "inventory-management/thermal",
+      "teks": [
+        "Inventory management",
+        "Manage inventory on the system.",
+        "Thermal",
+        "List of thermal on the system."
+      ],
+      "tombol": [
+        "Terminal",
+        "SIM card",
+        "SAM card",
+        "Peripheral",
+        "Thermal",
+        "Export",
+        "Import",
+        "New thermal",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Thermal name",
+        "Customer",
+        "Quantity",
+        "Location",
+        "Condition",
+        "Population",
+        "Rack & bin"
+      ]
+    },
+    {
+      "id": "WH-INV-006",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar tab inventory",
+      "url": "inventory-management/terminal",
+      "tab": [
+        {
+          "nama": "SIM card",
+          "url": "inventory-management/sim-card$"
+        },
+        {
+          "nama": "SAM card",
+          "url": "inventory-management/sam-card$"
+        },
+        {
+          "nama": "Peripheral",
+          "url": "inventory-management/peripheral$"
+        },
+        {
+          "nama": "Thermal",
+          "url": "inventory-management/thermal$"
+        },
+        {
+          "nama": "Terminal",
+          "url": "inventory-management/terminal$"
+        }
+      ]
+    },
+    {
+      "id": "WH-INV-007",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari Terminal yang tidak ada menampilkan tabel kosong",
+      "url": "inventory-management/terminal"
+    },
+    {
+      "id": "WH-INV-008",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari SIM card yang tidak ada menampilkan tabel kosong",
+      "url": "inventory-management/sim-card"
+    },
+    {
+      "id": "WH-INV-009",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari SAM card yang tidak ada menampilkan tabel kosong",
+      "url": "inventory-management/sam-card"
+    },
+    {
+      "id": "WH-INV-010",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari Peripheral yang tidak ada menampilkan tabel kosong",
+      "url": "inventory-management/peripheral"
+    },
+    {
+      "id": "WH-INV-011",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari Thermal yang tidak ada menampilkan tabel kosong",
+      "url": "inventory-management/thermal"
+    },
+    {
+      "id": "WH-INV-012",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah Terminal menolak data kosong",
+      "url": "inventory-management/terminal",
+      "tombol": "New terminal",
+      "judulForm": "Add terminal",
+      "teks": [
+        "Serial number",
+        "Part number",
+        "Ownership"
+      ],
+      "validasi": [
+        "Serial Number is required",
+        "Part number is required",
+        "Ownership is required"
+      ]
+    },
+    {
+      "id": "WH-INV-013",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah SIM card menolak data kosong",
+      "url": "inventory-management/sim-card",
+      "tombol": "New SIM card",
+      "judulForm": "Add new SIM card",
+      "teks": [
+        "ICCID",
+        "Serial Number",
+        "MSISDN",
+        "Provider"
+      ],
+      "validasi": [
+        "ICCID is required",
+        "Serial Number is required",
+        "MSISDN is required",
+        "Provider is required"
+      ]
+    },
+    {
+      "id": "WH-INV-014",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah SAM card menolak data kosong",
+      "url": "inventory-management/sam-card",
+      "tombol": "New SAM card",
+      "judulForm": "Add new SAM card",
+      "teks": [
+        "UID"
+      ],
+      "validasi": [
+        "uid is a required field"
+      ]
+    },
+    {
+      "id": "WH-INV-015",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah Peripheral menolak data kosong",
+      "url": "inventory-management/peripheral",
+      "tombol": "New peripheral",
+      "judulForm": "Add peripheral",
+      "teks": [
+        "Peripheral name",
+        "Terminal",
+        "Quantity"
+      ],
+      "validasi": [
+        "Peripheral name is a required field",
+        "Terminal is a required field",
+        "quantity is required"
+      ]
+    },
+    {
+      "id": "WH-INV-016",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah Thermal menolak data kosong",
+      "url": "inventory-management/thermal",
+      "tombol": "New thermal",
+      "judulForm": "Add thermal",
+      "teks": [
+        "Thermal name",
+        "Quantity"
+      ],
+      "validasi": [
+        "Thermal name is a required field",
+        "quantity is required"
+      ]
+    },
+    {
+      "id": "WH-INV-017",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Terminal tampil dari baris pertama",
+      "url": "inventory-management/terminal",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/terminal/[^/]+/detail$",
+      "teks": [
+        "Start date warranty",
+        "End date warranty",
+        "Terminal information",
+        "Detail terminal information.",
+        "Inventory Type",
+        "Part Number",
+        "Population",
+        "Device Type",
+        "Rack & bin",
+        "Warehouse information",
+        "Detailed Warehouse information.",
+        "Warehouse name"
+      ],
+      "tab": [
+        "Location & condition history"
+      ]
+    },
+    {
+      "id": "WH-INV-018",
+      "jenis": "export",
+      "prioritas": "P1",
+      "judul": "Export Terminal menghasilkan file Excel",
+      "url": "inventory-management/terminal",
+      "file": "^export-terminal\\.xlsx$"
+    },
+    {
+      "id": "WH-INV-019",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Terminal menampilkan data lain",
+      "url": "inventory-management/terminal"
+    },
+    {
+      "id": "WH-INV-020",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Terminal berdasarkan Terminal name",
+      "url": "inventory-management/terminal",
+      "field": "Terminal name",
+      "kolom": "Terminal name"
+    },
+    {
+      "id": "WH-INV-021",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail SIM card tampil dari baris pertama",
+      "url": "inventory-management/sim-card",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/sim-card/[^/]+/detail$",
+      "teks": [
+        "SIM card information",
+        "Detail SIM card information.",
+        "Terminal information",
+        "Detailed terminal information.",
+        "Terminal SN",
+        "TID SN",
+        "Project",
+        "Merchant name",
+        "MID",
+        "General information",
+        "Detail general information.",
+        "Status"
+      ]
+    },
+    {
+      "id": "WH-INV-022",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export SIM card menghasilkan file Excel",
+      "url": "inventory-management/sim-card",
+      "file": "^export-simcard\\.xlsx$"
+    },
+    {
+      "id": "WH-INV-023",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya SIM card menampilkan data lain",
+      "url": "inventory-management/sim-card"
+    },
+    {
+      "id": "WH-INV-024",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter SIM card berdasarkan Population",
+      "url": "inventory-management/sim-card",
+      "field": "Population",
+      "kolom": "Population"
+    },
+    {
+      "id": "WH-INV-025",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail SAM card tampil dari baris pertama",
+      "url": "inventory-management/sam-card",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/sam-card/[^/]+/detail$",
+      "teks": [
+        "SAM card information",
+        "Detail SAM card information.",
+        "Availability",
+        "Terminal information",
+        "Detailed terminal information.",
+        "Terminal SN",
+        "TID SN",
+        "Project",
+        "Merchant name",
+        "MID",
+        "General information",
+        "Detail general information."
+      ]
+    },
+    {
+      "id": "WH-INV-026",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export SAM card menghasilkan file Excel",
+      "url": "inventory-management/sam-card",
+      "file": "^export-samcard\\.xlsx$"
+    },
+    {
+      "id": "WH-INV-027",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya SAM card menampilkan data lain",
+      "url": "inventory-management/sam-card"
+    },
+    {
+      "id": "WH-INV-028",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter SAM card berdasarkan Population",
+      "url": "inventory-management/sam-card",
+      "field": "Population",
+      "kolom": "Population"
+    },
+    {
+      "id": "WH-INV-029",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Peripheral tampil dari baris pertama",
+      "url": "inventory-management/peripheral",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/peripheral/[^/]+/detail$",
+      "teks": [
+        "Peripheral information",
+        "Detail peripheral information.",
+        "Availability",
+        "General information",
+        "Detail general information.",
+        "Status",
+        "Last modified date",
+        "Last modified by",
+        "Created date",
+        "Created by"
+      ]
+    },
+    {
+      "id": "WH-INV-030",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Peripheral menghasilkan file Excel",
+      "url": "inventory-management/peripheral",
+      "file": "^export-peripheral\\.xlsx$"
+    },
+    {
+      "id": "WH-INV-031",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Peripheral menampilkan data lain",
+      "url": "inventory-management/peripheral"
+    },
+    {
+      "id": "WH-INV-032",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Peripheral berdasarkan Population",
+      "url": "inventory-management/peripheral",
+      "field": "Population",
+      "kolom": "Population"
+    },
+    {
+      "id": "WH-INV-033",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Thermal tampil dari baris pertama",
+      "url": "inventory-management/thermal",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/thermal/[^/]+/detail$",
+      "teks": [
+        "Thermal information",
+        "Detail thermal information.",
+        "Availability",
+        "General information",
+        "Detail general information.",
+        "Status",
+        "Last modified date",
+        "Last modified by",
+        "Created date",
+        "Created by"
+      ]
+    },
+    {
+      "id": "WH-INV-034",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Thermal menghasilkan file Excel",
+      "url": "inventory-management/thermal",
+      "file": "^export-thermal\\.xlsx$"
+    },
+    {
+      "id": "WH-INV-035",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Thermal menampilkan data lain",
+      "url": "inventory-management/thermal"
+    },
+    {
+      "id": "WH-INV-036",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Thermal berdasarkan Population",
+      "url": "inventory-management/thermal",
+      "field": "Population",
+      "kolom": "Population"
+    }
+  ]
+}

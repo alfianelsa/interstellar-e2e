@@ -1,0 +1,209 @@
+{
+  "modul": "Backoffice / Terminal",
+  "kasus": [
+    {
+      "id": "BO-TERM-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Terminal management tampil",
+      "url": "terminal-management",
+      "teks": [
+        "Terminal management",
+        "Manage terminal on the system.",
+        "Terminal",
+        "List of terminal on the system."
+      ],
+      "tombol": [
+        "Export",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Serial number",
+        "TID SN",
+        "MID",
+        "Project",
+        "Status",
+        "Device type",
+        "Ownership",
+        "Condition",
+        "Location"
+      ]
+    },
+    {
+      "id": "BO-TERM-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari terminal yang tidak ada menampilkan tabel kosong",
+      "url": "terminal-management"
+    },
+    {
+      "id": "BO-TERM-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Terminal diagnostic tampil",
+      "url": "terminal",
+      "teks": [
+        "Terminal diagnostic",
+        "List of terminal diagnostic",
+        "List of terminal diagnostic executed."
+      ],
+      "tombol": [
+        "Schedule",
+        "New diagnostic",
+        "View all",
+        "Scheduled",
+        "Ad-hoc"
+      ],
+      "kolom": [
+        "Diagnostic date & time",
+        "# terminal",
+        "# issues found",
+        "Schedule type",
+        "Requester",
+        "Progress"
+      ]
+    },
+    {
+      "id": "BO-TERM-004",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form diagnostic baru menolak data kosong",
+      "url": "terminal",
+      "tombol": "New diagnostic",
+      "judulForm": "Add diagnostic",
+      "validasi": [
+        "At least one field is required",
+        "area is a required field"
+      ]
+    },
+    {
+      "id": "BO-TERM-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Diagnostic report tampil",
+      "url": "diagnostic-report",
+      "teks": [
+        "Diagnostic report",
+        "List of terminal diagnostic",
+        "List of terminal diagnostic executed."
+      ],
+      "tombol": [
+        "View all",
+        "Scheduled",
+        "Ad-hoc"
+      ],
+      "kolom": [
+        "Diagnostic date & time",
+        "# terminal",
+        "# issues found",
+        "Schedule type",
+        "Requester",
+        "Progress"
+      ]
+    },
+    {
+      "id": "BO-TERM-006",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Terminal management tampil dari baris pertama",
+      "url": "terminal-management",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/terminal/[^/]+/detail$",
+      "teks": [
+        "Terminal information",
+        "Detail terminal information.",
+        "Merchant information",
+        "Detailed merchant information.",
+        "Customer",
+        "Merchant name",
+        "General information",
+        "Detail general information.",
+        "BAST number",
+        "BAST date",
+        "Last modified date",
+        "Created date"
+      ]
+    },
+    {
+      "id": "BO-TERM-007",
+      "jenis": "export",
+      "prioritas": "P1",
+      "judul": "Export Terminal management menghasilkan file Excel",
+      "url": "terminal-management",
+      "file": "^export-terminal\\.xlsx$"
+    },
+    {
+      "id": "BO-TERM-008",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Terminal management menampilkan data lain",
+      "url": "terminal-management"
+    },
+    {
+      "id": "BO-TERM-009",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Terminal management berdasarkan Ownership",
+      "url": "terminal-management",
+      "field": "Ownership",
+      "kolom": "Ownership"
+    },
+    {
+      "id": "BO-TERM-010",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Terminal diagnostic tampil dari baris pertama",
+      "url": "terminal",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/diagnostic/[^/]+/detail-diagnostic-result$",
+      "teks": [
+        "Diagnostic result",
+        "Reporting and analytics",
+        "Current progress",
+        "Elapsed time",
+        "# of terminal (total)",
+        "# of terminal (diagnosed)",
+        "# of terminal (with issue)",
+        "# of terminal (without issue)",
+        "# of issue found",
+        "Avg.issue/terminal",
+        "Issue breakdown",
+        "RAM usage"
+      ]
+    },
+    {
+      "id": "BO-TERM-011",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Terminal diagnostic menampilkan data lain",
+      "url": "terminal"
+    },
+    {
+      "id": "BO-TERM-012",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Diagnostic report tampil dari baris pertama",
+      "url": "diagnostic-report",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/diagnostic-report/[^/]+$",
+      "urlDetail": "diagnostic-report/detail/[^/]+",
+      "teks": [
+        "SN EDC",
+        "Merchant Name",
+        "Ticket Status",
+        "RAM usage",
+        "Battery level"
+      ]
+    },
+    {
+      "id": "BO-TERM-013",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Diagnostic report menampilkan data lain",
+      "url": "diagnostic-report"
+    }
+  ]
+}

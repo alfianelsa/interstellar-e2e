@@ -1,0 +1,80 @@
+{
+  "modul": "Warehouse / Stock Adjustment",
+  "kasus": [
+    {
+      "id": "WH-SA-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Stock adjustment tampil",
+      "url": "stock-adjustment",
+      "teks": [
+        "Stock adjustment",
+        "Manage inventory by stock adjustment here.",
+        "List of stock adjustment",
+        "List of your stock adjustment history."
+      ],
+      "tombol": [
+        "New stock adjustment",
+        "View all",
+        "Attention",
+        "Filters"
+      ],
+      "kolom": [
+        "ID",
+        "Created date",
+        "Warehouse",
+        "Created by"
+      ]
+    },
+    {
+      "id": "WH-SA-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari stock adjustment yang tidak ada menampilkan tabel kosong",
+      "url": "stock-adjustment"
+    },
+    {
+      "id": "WH-SA-003",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form stock adjustment baru menolak data kosong",
+      "url": "stock-adjustment",
+      "tombol": "New stock adjustment",
+      "judulForm": "Add stock adjustment",
+      "validasi": [
+        "Stock adjustment ID is a required field",
+        "warehouse is a required field"
+      ]
+    },
+    {
+      "id": "WH-SA-004",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Stock adjustment tampil dari baris pertama",
+      "url": "stock-adjustment",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/stock-adjustment/[^/]+/detail$",
+      "teks": [
+        "General information",
+        "Detail general information.",
+        "Location"
+      ]
+    },
+    {
+      "id": "WH-SA-005",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Stock adjustment menampilkan data lain",
+      "url": "stock-adjustment"
+    },
+    {
+      "id": "WH-SA-006",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Stock adjustment berdasarkan Warehouse",
+      "url": "stock-adjustment",
+      "field": "Warehouse",
+      "kolom": "Warehouse"
+    }
+  ]
+}

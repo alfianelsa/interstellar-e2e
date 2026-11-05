@@ -1,0 +1,68 @@
+{
+  "modul": "Warehouse / Transfer Order",
+  "kasus": [
+    {
+      "id": "WH-TO-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Transfer order tampil",
+      "url": "transfer-order",
+      "teks": [
+        "Transfer order",
+        "Manage inventory by transfer order here.",
+        "List of transfer order",
+        "List of transfer order.",
+        "All Warehouse"
+      ],
+      "tombol": [
+        "New transfer order",
+        "Open",
+        "Intransit",
+        "Received",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "ID/Created date",
+        "Customer",
+        "Quantity",
+        "Sender",
+        "Receiver",
+        "Created by",
+        "Status"
+      ]
+    },
+    {
+      "id": "WH-TO-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari transfer order yang tidak ada menampilkan tabel kosong",
+      "url": "transfer-order"
+    },
+    {
+      "id": "WH-TO-003",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form transfer order baru belum bisa lanjut saat kosong",
+      "url": "transfer-order",
+      "tombol": "New transfer order",
+      "judulForm": "Add transfer order",
+      "teks": [
+        "Sender",
+        "Receiver",
+        "Transfer order ID"
+      ],
+      "submit": "Next",
+      "submitNonaktif": true,
+      "validasi": []
+    },
+    {
+      "id": "WH-TO-004",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Transfer order berdasarkan Status",
+      "url": "transfer-order",
+      "field": "Status"
+    }
+  ]
+}

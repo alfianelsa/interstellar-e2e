@@ -1,0 +1,68 @@
+{
+  "modul": "Warehouse / Approval",
+  "kasus": [
+    {
+      "id": "WH-APR-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Approval inventory management tampil",
+      "url": "approval",
+      "teks": [
+        "Approval inventory management",
+        "Stock opname, stock adjustment and transfer order with attention from your team.",
+        "List of stock attention",
+        "List of attention from your team."
+      ],
+      "tombol": [
+        "Open",
+        "Closed",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "ID",
+        "Category",
+        "Responsible",
+        "Created by"
+      ]
+    },
+    {
+      "id": "WH-APR-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari approval inventory management yang tidak ada menampilkan tabel kosong",
+      "url": "approval"
+    },
+    {
+      "id": "WH-APR-003",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Approval inventory management tampil dari baris pertama",
+      "url": "approval",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/approval/[^/]+/detail$",
+      "teks": [
+        "General information",
+        "Detail general information.",
+        "Created date",
+        "Location"
+      ]
+    },
+    {
+      "id": "WH-APR-004",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Approval inventory management menampilkan data lain",
+      "url": "approval"
+    },
+    {
+      "id": "WH-APR-005",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Approval inventory management berdasarkan Category",
+      "url": "approval",
+      "field": "Category",
+      "kolom": "Category"
+    }
+  ]
+}

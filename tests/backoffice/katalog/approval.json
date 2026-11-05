@@ -1,0 +1,133 @@
+{
+  "modul": "Backoffice / Approval",
+  "kasus": [
+    {
+      "id": "BO-APR-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman My approval tampil",
+      "url": "approval/my-approval",
+      "teks": [
+        "Approval",
+        "Manage approvals submitted by your team.",
+        "List of approval",
+        "List of your approval task."
+      ],
+      "tombol": [
+        "My approval",
+        "My subordinate approval",
+        "Open",
+        "Closed",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Requested by",
+        "Due in",
+        "SLA approval status",
+        "Status",
+        "Approver"
+      ]
+    },
+    {
+      "id": "BO-APR-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman My subordinate approval tampil",
+      "url": "approval/my-subordinate-approval",
+      "teks": [
+        "Approval",
+        "Manage approvals submitted by your team.",
+        "List of approval",
+        "List of your approval task."
+      ],
+      "tombol": [
+        "My approval",
+        "My subordinate approval",
+        "Open",
+        "Closed",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Requested by",
+        "Due in",
+        "SLA approval status",
+        "Status",
+        "Approver"
+      ]
+    },
+    {
+      "id": "BO-APR-003",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah tab My approval dan My subordinate approval",
+      "url": "approval/my-approval",
+      "tab": [
+        {
+          "nama": "My subordinate approval",
+          "url": "approval/my-subordinate-approval$"
+        },
+        {
+          "nama": "My approval",
+          "url": "approval/my-approval$"
+        }
+      ]
+    },
+    {
+      "id": "BO-APR-004",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari approval yang tidak ada menampilkan tabel kosong",
+      "url": "approval/my-subordinate-approval"
+    },
+    {
+      "id": "BO-APR-005",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter My approval berdasarkan Requested by",
+      "url": "approval/my-approval",
+      "field": "Requested by"
+    },
+    {
+      "id": "BO-APR-006",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail My subordinate approval tampil dari baris pertama",
+      "url": "approval/my-subordinate-approval",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/approval/[^/]+$",
+      "teks": [
+        "Job category",
+        "Ticket information",
+        "Detailed ticket information.",
+        "Latest interaction",
+        "SLA total",
+        "Call Center",
+        "Aging",
+        "General information",
+        "Detailed general information.",
+        "Request date",
+        "No. SPK",
+        "Last modified date"
+      ]
+    },
+    {
+      "id": "BO-APR-007",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya My subordinate approval menampilkan data lain",
+      "url": "approval/my-subordinate-approval"
+    },
+    {
+      "id": "BO-APR-008",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter My subordinate approval berdasarkan Requested by",
+      "url": "approval/my-subordinate-approval",
+      "field": "Requested by"
+    }
+  ]
+}

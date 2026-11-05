@@ -1,0 +1,124 @@
+{
+  "modul": "Warehouse / Account Management",
+  "kasus": [
+    {
+      "id": "WH-ACC-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman User tampil",
+      "url": "account-management/user",
+      "teks": [
+        "User & team management",
+        "Manage user and team structure here",
+        "User",
+        "List of individuals role and reporting."
+      ],
+      "tombol": [
+        "User",
+        "Team management",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Name",
+        "Email",
+        "WhatsApp",
+        "Warehouse",
+        "Report to"
+      ]
+    },
+    {
+      "id": "WH-ACC-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Team management tampil",
+      "url": "account-management/team",
+      "teks": [
+        "User & team management",
+        "Manage user and team structure here",
+        "My team member",
+        "Manage your direct team member."
+      ],
+      "tombol": [
+        "User",
+        "Team management",
+        "New team member",
+        "Direct",
+        "Indirect",
+        "Filters"
+      ],
+      "kolom": [
+        "Full name",
+        "Date added"
+      ]
+    },
+    {
+      "id": "WH-ACC-003",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah tab User dan Team management",
+      "url": "account-management/user",
+      "tab": [
+        {
+          "nama": "Team management",
+          "url": "account-management/team$"
+        },
+        {
+          "nama": "User",
+          "url": "account-management/user$"
+        }
+      ]
+    },
+    {
+      "id": "WH-ACC-004",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari user yang tidak ada menampilkan tabel kosong",
+      "url": "account-management/user"
+    },
+    {
+      "id": "WH-ACC-005",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah team member tanpa anggota tidak menyimpan apa pun",
+      "url": "account-management/team",
+      "tombol": "New team member",
+      "judulForm": "Add team member",
+      "validasi": [
+        "Network Error"
+      ],
+      "fixme": "BUG: Submit \"Add team member\" tanpa memilih anggota langsung mengirim PATCH user-and-team/team/<id> (tidak ada validasi). Ditemukan 2026-11-04, juga di backoffice."
+    },
+    {
+      "id": "WH-ACC-006",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail User tampil dari baris pertama",
+      "url": "account-management/user",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/user-and-team/user/[^/]+/detail$",
+      "teks": [
+        "Personal information",
+        "Detailed personal information",
+        "Full name",
+        "Username",
+        "Role",
+        "General information",
+        "Detailed general information",
+        "Login access",
+        "Last modified date",
+        "Last modified by",
+        "Created date",
+        "Created by"
+      ]
+    },
+    {
+      "id": "WH-ACC-007",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya User menampilkan data lain",
+      "url": "account-management/user"
+    }
+  ]
+}

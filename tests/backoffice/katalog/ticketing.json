@@ -1,0 +1,111 @@
+{
+  "modul": "Backoffice / Ticketing",
+  "kasus": [
+    {
+      "id": "BO-TIC-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Ticketing system tampil",
+      "url": "ticketing",
+      "teks": [
+        "Ticketing system",
+        "Ticket management",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Export",
+        "Import",
+        "New ticket",
+        "Open",
+        "Scheduled",
+        "Pending approval",
+        "Closed",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Merchant name",
+        "Ticket status",
+        "SLA status",
+        "Due in",
+        "PIC"
+      ]
+    },
+    {
+      "id": "BO-TIC-002",
+      "jenis": "cari",
+      "prioritas": "P2",
+      "judul": "Cari tiket yang tidak ada menampilkan tabel kosong",
+      "url": "ticketing"
+    },
+    {
+      "id": "BO-TIC-003",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Tombol New ticket menampilkan pilihan job category",
+      "url": "ticketing",
+      "tombol": "New ticket",
+      "judulForm": "Add new ticket",
+      "teks": [
+        "Preventive maintenance",
+        "Corrective maintenance",
+        "Replacement",
+        "Withdrawal",
+        "Special project",
+        "Faktur / supplies",
+        "Initialization",
+        "Installation"
+      ],
+      "validasi": [],
+      "submitAda": false,
+      "tutup": "X"
+    },
+    {
+      "id": "BO-TIC-004",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Ticketing system tampil dari baris pertama",
+      "url": "ticketing",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/ticket/[^/]+/detail/pics$",
+      "teks": [
+        "Job category",
+        "Ticket information",
+        "Detailed ticket information.",
+        "Latest interaction",
+        "SLA total",
+        "Aging",
+        "General information",
+        "Detailed general information.",
+        "Request date",
+        "Status",
+        "No. SPK",
+        "Last modified date"
+      ]
+    },
+    {
+      "id": "BO-TIC-005",
+      "jenis": "export",
+      "prioritas": "P1",
+      "judul": "Export Ticketing system menghasilkan file Excel",
+      "url": "ticketing",
+      "file": "^export-ticket\\.xlsx$"
+    },
+    {
+      "id": "BO-TIC-006",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Ticketing system menampilkan data lain",
+      "url": "ticketing"
+    },
+    {
+      "id": "BO-TIC-007",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Ticketing system berdasarkan SLA status",
+      "url": "ticketing",
+      "field": "SLA status"
+    }
+  ]
+}

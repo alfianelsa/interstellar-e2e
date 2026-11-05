@@ -1,0 +1,28 @@
+---
+description: Aturan menulis & memperbaiki test Playwright interstellar-e2e
+globs: tests/**/*.ts,tests/**/*.json,specs/**/*.md,testcases/**/*
+alwaysApply: false
+---
+
+# interstellar-e2e — Playwright
+
+1 repo untuk semua app: `tests/<app>/` (warehouse, backoffice, content-management, merchant, invoice) + `tests/lintas-app/`. Aturan lengkap: `.github/copilot-instructions.md`.
+
+- **Import `test`/`expect` dari `tests/helpers/test.ts`** (pengaman read-only + cek API 5xx).
+- **`page.goto('halaman')` tanpa `/` di depan** — baseURL sudah berisi path app.
+- Locator: `getByRole` → `getByLabel` / `getByPlaceholder` → `getByText` → `getByTestId`. Jangan class CSS / XPath.
+- Jangan `page.waitForTimeout()`. Toast: `page.getByRole('alert')`.
+- Sesi dari `tests/<app>/auth.setup.ts`; jangan login sampai OTP di test (1 sesi per app).
+- Belum login: `test.use({ storageState: { cookies: [], origins: [] } })`.
+- Judul test = `TC-<APP>-<MODUL>-<NNN> <judul spec>`.
+- Halaman/tab/cari/form sederhana → tambah ke `tests/<app>/katalog/<modul>.json` (tipe `KasusKatalog` di `tests/helpers/katalog.ts`), lalu `npm run katalog:excel`.
+- Jangan pakai nilai data (angka, nama, tanggal) sebagai expected.
+- Test default read-only; test yang menyimpan data → diskusi dev dulu.
+
+## Healer
+
+Boleh: locator, katalog, wait yang benar. **Dilarang** hapus/lemahkan assertion atau menambah `izinkanApi`/`izinkan5xx` supaya lolos. Bug app → `fixme` + alasan + tanggal.
+
+## Jangan ubah tanpa dev
+
+`playwright.config.ts`, `tests/helpers/*`, `auth.setup.ts`, `Jenkinsfile`, `package.json`, `scripts/`. `specs/*.md` AUTO-GENERATED & `testcases/katalog-regresi.xlsx` = hasil generate.

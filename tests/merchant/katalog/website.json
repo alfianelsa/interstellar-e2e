@@ -1,0 +1,76 @@
+{
+  "modul": "Merchant / Website publik",
+  "kasus": [
+    {
+      "id": "MC-WEB-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Beranda tampil",
+      "url": "",
+      "teks": [
+        "Moving Commerce Forward"
+      ],
+      "tombol": [
+        "Login",
+        "Let’s talk",
+        "See guide book",
+        "Chat with us"
+      ]
+    },
+    {
+      "id": "MC-WEB-002",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Produk tampil",
+      "url": "produk",
+      "teks": [
+        "Simple, transparent pricing"
+      ],
+      "tombol": [
+        "Chat with us"
+      ]
+    },
+    {
+      "id": "MC-WEB-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Bantuan tampil",
+      "url": "bantuan",
+      "teks": [
+        "Support",
+        "Everything you need to know",
+        "Frequently asked questions",
+        "Still have question?"
+      ],
+      "tombol": [
+        "FAQ",
+        "Guide Book",
+        "Get in touch"
+      ]
+    },
+    {
+      "id": "MC-WEB-004",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Navigasi menu Beranda, Produk, Bantuan",
+      "url": "",
+      "tab": [
+        {
+          "nama": "Produk",
+          "url": "produk$",
+          "link": true
+        },
+        {
+          "nama": "Bantuan",
+          "url": "bantuan$",
+          "link": true
+        },
+        {
+          "nama": "Beranda",
+          "url": "/$",
+          "link": true
+        }
+      ]
+    }
+  ]
+}

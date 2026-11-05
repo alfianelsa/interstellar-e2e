@@ -1,0 +1,220 @@
+{
+  "modul": "Backoffice / Account Management",
+  "kasus": [
+    {
+      "id": "BO-ACC-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman User tampil",
+      "url": "account-management/user",
+      "teks": [
+        "User & team management",
+        "Manage user and team structure here",
+        "User",
+        "List of individuals role and reporting."
+      ],
+      "tombol": [
+        "User",
+        "Team management",
+        "Technician",
+        "Export",
+        "Import",
+        "New user",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Name",
+        "Email",
+        "WhatsApp",
+        "Report to"
+      ]
+    },
+    {
+      "id": "BO-ACC-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Team management tampil",
+      "url": "account-management/team",
+      "teks": [
+        "User & team management",
+        "Manage user and team structure here",
+        "My team member",
+        "Manage your direct team member."
+      ],
+      "tombol": [
+        "User",
+        "Team management",
+        "Technician",
+        "New team member",
+        "Direct",
+        "Indirect",
+        "Filters"
+      ],
+      "kolom": [
+        "Full name",
+        "Date added"
+      ]
+    },
+    {
+      "id": "BO-ACC-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Technician tampil",
+      "url": "account-management/technician",
+      "teks": [
+        "User & team management",
+        "Manage user and team structure here",
+        "List of technician and their coverage area",
+        "Set technician based on their coverage area for task assignment."
+      ],
+      "tombol": [
+        "User",
+        "Team management",
+        "Technician",
+        "Import",
+        "View All",
+        "Assigned",
+        "Unassigned",
+        "Filters"
+      ],
+      "kolom": [
+        "Province/City",
+        "District/Sub-district",
+        "Zip Code",
+        "Technician",
+        "Warehouse"
+      ]
+    },
+    {
+      "id": "BO-ACC-004",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar tab User & team management",
+      "url": "account-management/user",
+      "tab": [
+        {
+          "nama": "Team management",
+          "url": "account-management/team$"
+        },
+        {
+          "nama": "Technician",
+          "url": "account-management/technician$"
+        },
+        {
+          "nama": "User",
+          "url": "account-management/user$"
+        }
+      ]
+    },
+    {
+      "id": "BO-ACC-005",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari user yang tidak ada menampilkan tabel kosong",
+      "url": "account-management/user"
+    },
+    {
+      "id": "BO-ACC-006",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form user baru menolak data kosong",
+      "url": "account-management/user",
+      "tombol": "New user",
+      "judulForm": "Add user",
+      "teks": [
+        "Full name",
+        "Username",
+        "Email",
+        "WhatsApp",
+        "Role"
+      ],
+      "validasi": [
+        "Full name is a required field",
+        "Username is a required field",
+        "email is a required field",
+        "whatsapp is a required field",
+        "role is a required field",
+        "territory_type is a required field",
+        "coverage is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "BO-ACC-007",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah team member tanpa anggota tidak menyimpan apa pun",
+      "url": "account-management/team",
+      "tombol": "New team member",
+      "judulForm": "Add team member",
+      "validasi": [
+        "Request timeout"
+      ],
+      "fixme": "BUG: Submit \"Add team member\" tanpa memilih anggota langsung mengirim PATCH user-and-team/team/<id> (tidak ada validasi). Ditemukan 2026-11-04, juga di warehouse."
+    },
+    {
+      "id": "BO-ACC-008",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail User tampil dari baris pertama",
+      "url": "account-management/user",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/user-and-team/user/[^/]+/detail$",
+      "teks": [
+        "Personal information",
+        "Detailed personal information",
+        "Full name",
+        "Username",
+        "Role",
+        "Territory type",
+        "General information",
+        "Detailed general information",
+        "Login access",
+        "Last modified date",
+        "Last modified by",
+        "Created date"
+      ]
+    },
+    {
+      "id": "BO-ACC-009",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export User menghasilkan file Excel",
+      "url": "account-management/user",
+      "file": "^export-user\\.xlsx$"
+    },
+    {
+      "id": "BO-ACC-010",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya User menampilkan data lain",
+      "url": "account-management/user"
+    },
+    {
+      "id": "BO-ACC-011",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter User berdasarkan User Role",
+      "url": "account-management/user",
+      "field": "User Role"
+    },
+    {
+      "id": "BO-ACC-012",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Team management berdasarkan Role",
+      "url": "account-management/team",
+      "field": "Role"
+    },
+    {
+      "id": "BO-ACC-013",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Technician berdasarkan Technician",
+      "url": "account-management/technician",
+      "field": "Technician"
+    }
+  ]
+}

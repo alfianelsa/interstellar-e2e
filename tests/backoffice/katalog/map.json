@@ -1,0 +1,19 @@
+{
+  "modul": "Backoffice / Map",
+  "kasus": [
+    {
+      "id": "BO-MAP-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Peta teknisi tampil tanpa error Google Maps",
+      "url": "map",
+      "teks": [
+        "Select user"
+      ],
+      "tidakAda": [
+        "This page can't load Google Maps correctly."
+      ],
+      "fixme": "BUG/ENV: Google Maps di dev menampilkan \"This page can't load Google Maps correctly.\" (API key / billing Google Maps). Ditemukan 2026-11-04."
+    }
+  ]
+}

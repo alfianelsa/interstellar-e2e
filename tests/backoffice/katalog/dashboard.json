@@ -1,0 +1,78 @@
+{
+  "modul": "Backoffice / Performance Dashboard",
+  "kasus": [
+    {
+      "id": "BO-DASH-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Dashboard Monitoring job order tampil",
+      "url": "dashboard/monitoring-job-order",
+      "teks": [
+        "Performance dashboard",
+        "Tracking key performance indicators in real-time.",
+        "Monitoring job order"
+      ],
+      "tombol": [
+        "Monitoring job order",
+        "Historical job order",
+        "All job categories",
+        "Preventive maintenance",
+        "Corrective maintenance",
+        "Installation",
+        "Withdrawal",
+        "Replacement",
+        "Initialization",
+        "FK/Supplies",
+        "Special project",
+        "View all",
+        "Visit",
+        "Non visit",
+        "Select dates"
+      ]
+    },
+    {
+      "id": "BO-DASH-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Dashboard Historical job order tampil",
+      "url": "dashboard/historical-job-order",
+      "teks": [
+        "Performance dashboard",
+        "Tracking key performance indicators in real-time."
+      ],
+      "tombol": [
+        "Monitoring job order",
+        "Historical job order",
+        "Preventive maintenance",
+        "Corrective maintenance",
+        "Installation",
+        "Withdrawal",
+        "Replacement",
+        "Initialization",
+        "FK/Supplies",
+        "Special project",
+        "View all",
+        "Visit",
+        "Non visit",
+        "Select dates"
+      ]
+    },
+    {
+      "id": "BO-DASH-003",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah tab Monitoring dan Historical job order",
+      "url": "dashboard/monitoring-job-order",
+      "tab": [
+        {
+          "nama": "Historical job order",
+          "url": "dashboard/historical-job-order$"
+        },
+        {
+          "nama": "Monitoring job order",
+          "url": "dashboard/monitoring-job-order$"
+        }
+      ]
+    }
+  ]
+}

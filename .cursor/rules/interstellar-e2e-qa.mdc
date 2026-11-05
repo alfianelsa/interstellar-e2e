@@ -1,0 +1,15 @@
+---
+description: QA pakai Cursor di repo interstellar-e2e — arahkan ke AGENTS.md
+alwaysApply: true
+---
+
+# QA + Cursor
+
+Repo ini **interstellar-e2e** (Playwright, semua app web Interstellar). Jika user QA minta generate/healer/planner test:
+
+1. Baca **`AGENTS.md`** untuk alur Excel → import → test, katalog read-only, dan **contoh prompt**.
+2. Ikuti **`.cursor/rules/interstellar-e2e-playwright.mdc`** saat menyentuh `tests/` atau `specs/`.
+3. Setelah generate/healer: jalankan `npx playwright test --project=<app> --grep <ID>`; jangan selesai dengan assertion yang dilemahkan.
+4. Jawab QA dalam **Bahasa Indonesia** yang jelas, langkah konkret (perintah terminal + file path).
+
+Aturan lengkap: `.github/copilot-instructions.md`.

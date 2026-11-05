@@ -1,0 +1,31 @@
+{
+  "modul": "Content Management / Umum",
+  "kasus": [
+    {
+      "id": "CM-UMUM-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Welcome tampil setelah login",
+      "url": "",
+      "teks": [
+        "Welcome!",
+        "Choose your desired menu from the options on the sidebar to get started."
+      ]
+    },
+    {
+      "id": "CM-UMUM-002",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Profile tampil",
+      "url": "profile",
+      "teks": [
+        "Personal Info",
+        "Update your photo and personal details."
+      ],
+      "tombol": [
+        "Save changes",
+        "Update password"
+      ]
+    }
+  ]
+}

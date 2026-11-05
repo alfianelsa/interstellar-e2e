@@ -1,0 +1,77 @@
+{
+  "modul": "Warehouse / Ticketing",
+  "kasus": [
+    {
+      "id": "WH-TIC-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Ticketing system tampil",
+      "url": "ticketing",
+      "teks": [
+        "Ticketing system",
+        "Ticket management",
+        "Manage to assign and track tickets efficiently."
+      ],
+      "tombol": [
+        "Open",
+        "Closed",
+        "Scheduled",
+        "View all",
+        "Filters"
+      ],
+      "kolom": [
+        "Ticket ID",
+        "Job category",
+        "Ticket status",
+        "SLA status",
+        "Due in",
+        "PIC"
+      ]
+    },
+    {
+      "id": "WH-TIC-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari ticketing system yang tidak ada menampilkan tabel kosong",
+      "url": "ticketing"
+    },
+    {
+      "id": "WH-TIC-003",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Ticketing system tampil dari baris pertama",
+      "url": "ticketing",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/ticket/[^/]+/detail/pics$",
+      "teks": [
+        "New terminal serial number",
+        "ICCID SIMCARD",
+        "UID SAMCARD",
+        "Ticket information",
+        "Detailed ticket information.",
+        "Latest interaction",
+        "SLA total",
+        "Aging",
+        "General information",
+        "Detailed general information.",
+        "Request date",
+        "Status"
+      ]
+    },
+    {
+      "id": "WH-TIC-004",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Ticketing system menampilkan data lain",
+      "url": "ticketing"
+    },
+    {
+      "id": "WH-TIC-005",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Ticketing system berdasarkan Merchant",
+      "url": "ticketing",
+      "field": "Merchant"
+    }
+  ]
+}

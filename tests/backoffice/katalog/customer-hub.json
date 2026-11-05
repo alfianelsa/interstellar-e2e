@@ -1,0 +1,510 @@
+{
+  "modul": "Backoffice / Customer Hub",
+  "kasus": [
+    {
+      "id": "BO-CUST-001",
+      "jenis": "halaman",
+      "prioritas": "P1",
+      "judul": "Halaman Customer tampil",
+      "url": "customer-management/customer/registered-customer",
+      "teks": [
+        "Customer hub",
+        "Manage customer information registered in the system.",
+        "Customer",
+        "List of registered customers.",
+        "List of customer"
+      ],
+      "tombol": [
+        "Customer",
+        "Project",
+        "SLA",
+        "Merchant",
+        "Merchant group",
+        "New customer",
+        "Active",
+        "Inactive",
+        "Archived"
+      ],
+      "kolom": [
+        "Customer name",
+        "# terminal",
+        "# merchant",
+        "# project",
+        "Registered date"
+      ]
+    },
+    {
+      "id": "BO-CUST-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Merchant tampil",
+      "url": "customer-management/customer/merchant",
+      "teks": [
+        "Customer hub",
+        "Manage customer information registered in the system.",
+        "Customer",
+        "List of registered customers.",
+        "Merchant",
+        "List of merchant"
+      ],
+      "tombol": [
+        "Customer",
+        "Project",
+        "SLA",
+        "Merchant",
+        "Merchant group",
+        "Export",
+        "Import",
+        "New merchant",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Merchant name",
+        "MID",
+        "MCC",
+        "Merchant group",
+        "City",
+        "Contact"
+      ]
+    },
+    {
+      "id": "BO-CUST-003",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Merchant group tampil",
+      "url": "customer-management/customer/merchant-group",
+      "teks": [
+        "Customer hub",
+        "Manage customer information registered in the system.",
+        "Customer",
+        "List of registered customers.",
+        "Merchant group",
+        "List of Merchant group"
+      ],
+      "tombol": [
+        "Customer",
+        "Project",
+        "SLA",
+        "Merchant",
+        "Merchant group",
+        "Export",
+        "Import",
+        "New Merchant group",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Merchant group name",
+        "# merchant",
+        "# terminal"
+      ]
+    },
+    {
+      "id": "BO-CUST-004",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Project tampil",
+      "url": "customer-management/project",
+      "teks": [
+        "Customer hub",
+        "Manage customer information registered in the system.",
+        "Project",
+        "List of project."
+      ],
+      "tombol": [
+        "Customer",
+        "Project",
+        "SLA",
+        "Export",
+        "Import",
+        "New project",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Name & type project",
+        "Customer",
+        "Contract number",
+        "Start date",
+        "End date",
+        "# Terminal",
+        "# Merchant"
+      ]
+    },
+    {
+      "id": "BO-CUST-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman SLA tampil",
+      "url": "customer-management/sla",
+      "teks": [
+        "Customer hub",
+        "Manage customer information registered in the system.",
+        "SLA",
+        "List of Service Level Agreement on the system."
+      ],
+      "tombol": [
+        "Customer",
+        "Project",
+        "SLA",
+        "New SLA",
+        "Active",
+        "Inactive",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "SLA name",
+        "Project name & customer",
+        "Area",
+        "Job category"
+      ]
+    },
+    {
+      "id": "BO-CUST-006",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar tab Customer hub",
+      "url": "customer-management/customer/registered-customer",
+      "tab": [
+        {
+          "nama": "Merchant",
+          "url": "customer/merchant$"
+        },
+        {
+          "nama": "Merchant group",
+          "url": "customer/merchant-group$"
+        },
+        {
+          "nama": "Project",
+          "url": "customer-management/project$"
+        },
+        {
+          "nama": "SLA",
+          "url": "customer-management/sla$"
+        },
+        {
+          "nama": "Customer",
+          "url": "customer/registered-customer$"
+        }
+      ]
+    },
+    {
+      "id": "BO-CUST-007",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari customer yang tidak ada menampilkan tabel kosong",
+      "url": "customer-management/customer/registered-customer"
+    },
+    {
+      "id": "BO-CUST-008",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari merchant yang tidak ada menampilkan tabel kosong",
+      "url": "customer-management/customer/merchant"
+    },
+    {
+      "id": "BO-CUST-009",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari merchant group yang tidak ada menampilkan tabel kosong",
+      "url": "customer-management/customer/merchant-group"
+    },
+    {
+      "id": "BO-CUST-010",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari project yang tidak ada menampilkan tabel kosong",
+      "url": "customer-management/project"
+    },
+    {
+      "id": "BO-CUST-011",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari sla yang tidak ada menampilkan tabel kosong",
+      "url": "customer-management/sla"
+    },
+    {
+      "id": "BO-CUST-012",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form customer baru menolak data kosong",
+      "url": "customer-management/customer/registered-customer",
+      "tombol": "New customer",
+      "judulForm": "Add customer",
+      "validasi": [
+        "name is a required field",
+        "customer_code is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "BO-CUST-013",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form merchant baru menolak data kosong",
+      "url": "customer-management/customer/merchant",
+      "tombol": "New merchant",
+      "judulForm": "Add merchant",
+      "validasi": [
+        "mid is a required field",
+        "name is a required field",
+        "pic_name is a required field",
+        "pic_number is a required field",
+        "province is a required field",
+        "city is a required field",
+        "district is a required field",
+        "sub_district is a required field",
+        "zip_code is a required field",
+        "full_address is a required field"
+      ]
+    },
+    {
+      "id": "BO-CUST-014",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form merchant group baru menolak data kosong",
+      "url": "customer-management/customer/merchant-group",
+      "tombol": "New Merchant group",
+      "judulForm": "Add merchant group",
+      "validasi": [
+        "name is a required field"
+      ]
+    },
+    {
+      "id": "BO-CUST-015",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form project baru menolak data kosong",
+      "url": "customer-management/project",
+      "tombol": "New project",
+      "judulForm": "Add project",
+      "validasi": [
+        "project_name is a required field",
+        "service_type is a required field",
+        "contract_number is a required field",
+        "customer is a required field",
+        "start_date is a required field",
+        "end_date is a required field"
+      ]
+    },
+    {
+      "id": "BO-CUST-016",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form SLA baru menolak data kosong",
+      "url": "customer-management/sla",
+      "tombol": "New SLA",
+      "judulForm": "Edit SLA",
+      "validasi": [
+        "sla_name is a required field",
+        "project&customer is a required field",
+        "area is a required field",
+        "job_category_ is a required field"
+      ],
+      "catatan": "Judul form \"New SLA\" tertulis \"Edit SLA\" (typo UI, ditemukan 2026-11-04)."
+    },
+    {
+      "id": "BO-CUST-017",
+      "jenis": "detail",
+      "prioritas": "P1",
+      "judul": "Detail Customer tampil dari baris pertama",
+      "url": "customer-management/customer/registered-customer",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/customer-hub/customer/[^/]+/detail$",
+      "teks": [
+        "Customer information",
+        "# Terminal",
+        "# Merchant",
+        "# Project",
+        "General Information",
+        "Detailed general information",
+        "Status",
+        "Last modified date",
+        "Last modified by",
+        "Created date",
+        "Created by",
+        "Customer code"
+      ]
+    },
+    {
+      "id": "BO-CUST-018",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Customer menampilkan data lain",
+      "url": "customer-management/customer/registered-customer"
+    },
+    {
+      "id": "BO-CUST-019",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Merchant tampil dari baris pertama",
+      "url": "customer-management/customer/merchant",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/customer-hub/merchant/[^/]+/detail$",
+      "teks": [
+        "Merchant information",
+        "Detailed merchant information.",
+        "Contact information",
+        "Detailed contact information.",
+        "PIC name",
+        "PIC position",
+        "WhatsApp PIC",
+        "Merchant phone",
+        "Email",
+        "Merchant address",
+        "Province",
+        "District"
+      ]
+    },
+    {
+      "id": "BO-CUST-020",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Merchant menghasilkan file Excel",
+      "url": "customer-management/customer/merchant",
+      "file": "^export-merchant\\.xlsx$"
+    },
+    {
+      "id": "BO-CUST-021",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Merchant menampilkan data lain",
+      "url": "customer-management/customer/merchant"
+    },
+    {
+      "id": "BO-CUST-022",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Merchant berdasarkan MCC",
+      "url": "customer-management/customer/merchant",
+      "field": "MCC"
+    },
+    {
+      "id": "BO-CUST-023",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Merchant group tampil dari baris pertama",
+      "url": "customer-management/customer/merchant-group",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/customer-hub/brand/[^/]+/detail$",
+      "teks": [
+        "Merchant group information",
+        "Brand name",
+        "General information",
+        "Detailed general information.",
+        "Last modified date",
+        "Last modified by",
+        "Created date",
+        "Created by",
+        "List of merchant"
+      ]
+    },
+    {
+      "id": "BO-CUST-024",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export Merchant group menghasilkan file Excel",
+      "url": "customer-management/customer/merchant-group",
+      "file": "^export-merchant-group\\.xlsx$"
+    },
+    {
+      "id": "BO-CUST-025",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Merchant group menampilkan data lain",
+      "url": "customer-management/customer/merchant-group"
+    },
+    {
+      "id": "BO-CUST-026",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Project tampil dari baris pertama",
+      "url": "customer-management/project",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/customer-hub/project/[^/]+/detail$",
+      "teks": [
+        "Project information",
+        "Detailed project information.",
+        "Project name",
+        "Project type",
+        "Customer information",
+        "Detailed customer information.",
+        "General information",
+        "Detailed general information.",
+        "Status",
+        "Last modified date",
+        "Last modified by",
+        "Created date"
+      ]
+    },
+    {
+      "id": "BO-CUST-027",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Project menghasilkan file Excel",
+      "url": "customer-management/project",
+      "file": "^export-project\\.xlsx$"
+    },
+    {
+      "id": "BO-CUST-028",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Project menampilkan data lain",
+      "url": "customer-management/project"
+    },
+    {
+      "id": "BO-CUST-029",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Project berdasarkan Customer",
+      "url": "customer-management/project",
+      "field": "Customer",
+      "kolom": "Customer"
+    },
+    {
+      "id": "BO-CUST-030",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail SLA tampil dari baris pertama",
+      "url": "customer-management/sla",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/customer-hub/sla/[^/]+/detail$",
+      "teks": [
+        "SLA information",
+        "Detailed SLA information.",
+        "Project name",
+        "Cutoff",
+        "SLA before cutoff",
+        "SLA after cutoff",
+        "Role information",
+        "Detailed role and cutoff information.",
+        "General information",
+        "Detail general information.",
+        "Status",
+        "Last modified date"
+      ]
+    },
+    {
+      "id": "BO-CUST-031",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya SLA menampilkan data lain",
+      "url": "customer-management/sla"
+    },
+    {
+      "id": "BO-CUST-032",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter SLA berdasarkan Area",
+      "url": "customer-management/sla",
+      "field": "Area",
+      "kolom": "Area"
+    }
+  ]
+}

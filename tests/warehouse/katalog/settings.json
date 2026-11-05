@@ -1,0 +1,401 @@
+{
+  "modul": "Warehouse / Settings",
+  "kasus": [
+    {
+      "id": "WH-SET-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings General tampil",
+      "url": "settings/general",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Blur display settings",
+        "Set the background blur display.",
+        "Slideout menus",
+        "Modals"
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Cancel",
+        "Save"
+      ]
+    },
+    {
+      "id": "WH-SET-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings Terminal name tampil",
+      "url": "settings/terminal-name",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Terminal name",
+        "List of terminal name."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "New terminal",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Terminal name",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SET-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings Role & access tampil",
+      "url": "settings/role",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Role & access",
+        "Manage your team role, hierarchy and page access here."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "New role",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Role name",
+        "Grade",
+        "Access",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SET-004",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings Warehouse tampil",
+      "url": "settings/warehouse",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Warehouse",
+        "List of registered warehouse."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Export",
+        "Import",
+        "New warehouse",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Warehouse name",
+        "Phone number",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SET-005",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings Rack tampil",
+      "url": "settings/rack",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Rack",
+        "List of rack."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Import",
+        "New rack",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Rack",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SET-006",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Settings Rack Category tampil",
+      "url": "settings/rack-category",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Rack management",
+        "List of rack."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Warehouse",
+        "Terminal",
+        "Inventory Status",
+        "Rack Category",
+        "Rack & bin",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Rack type",
+        "Grade",
+        "Prefix",
+        "Data property"
+      ]
+    },
+    {
+      "id": "WH-SET-007",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar tab Settings",
+      "url": "settings/general",
+      "tab": [
+        {
+          "nama": "Role & access",
+          "url": "settings/role$"
+        },
+        {
+          "nama": "Warehouse",
+          "url": "settings/warehouse$"
+        },
+        {
+          "nama": "Terminal",
+          "url": "settings/terminal-name$"
+        },
+        {
+          "nama": "Inventory Status",
+          "url": "settings/inventory-status/device-type$"
+        },
+        {
+          "nama": "Rack Category",
+          "url": "settings/rack-category$"
+        },
+        {
+          "nama": "General",
+          "url": "settings/general$"
+        }
+      ]
+    },
+    {
+      "id": "WH-SET-008",
+      "jenis": "cari",
+      "prioritas": "P4",
+      "judul": "Cari Terminal name yang tidak ada menampilkan tabel kosong",
+      "url": "settings/terminal-name"
+    },
+    {
+      "id": "WH-SET-009",
+      "jenis": "cari",
+      "prioritas": "P4",
+      "judul": "Cari Role & access yang tidak ada menampilkan tabel kosong",
+      "url": "settings/role"
+    },
+    {
+      "id": "WH-SET-010",
+      "jenis": "cari",
+      "prioritas": "P4",
+      "judul": "Cari Warehouse yang tidak ada menampilkan tabel kosong",
+      "url": "settings/warehouse"
+    },
+    {
+      "id": "WH-SET-011",
+      "jenis": "cari",
+      "prioritas": "P4",
+      "judul": "Cari Rack yang tidak ada menampilkan tabel kosong",
+      "url": "settings/rack"
+    },
+    {
+      "id": "WH-SET-012",
+      "jenis": "cari",
+      "prioritas": "P4",
+      "judul": "Cari Rack Category yang tidak ada menampilkan tabel kosong",
+      "url": "settings/rack-category"
+    },
+    {
+      "id": "WH-SET-013",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah role belum bisa dikirim saat kosong",
+      "url": "settings/role",
+      "tombol": "New role",
+      "judulForm": "Add role",
+      "teks": [
+        "Role name",
+        "Grade",
+        "Menu"
+      ],
+      "validasi": [],
+      "submitAda": false
+    },
+    {
+      "id": "WH-SET-014",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah warehouse menolak data kosong",
+      "url": "settings/warehouse",
+      "tombol": "New warehouse",
+      "judulForm": "Add warehouse",
+      "validasi": [
+        "name is a required field",
+        "code is a required field",
+        "phone_number is a required field",
+        "province is a required field",
+        "city is a required field",
+        "district is a required field",
+        "sub_district is a required field",
+        "zip_code is a required field",
+        "address is a required field"
+      ]
+    },
+    {
+      "id": "WH-SET-015",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah terminal name menolak data kosong",
+      "url": "settings/terminal-name",
+      "tombol": "New terminal",
+      "judulForm": "Add terminal name",
+      "validasi": [
+        "name is a required field"
+      ]
+    },
+    {
+      "id": "WH-SET-016",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form tambah rack menolak data kosong",
+      "url": "settings/rack",
+      "tombol": "New rack",
+      "judulForm": "Add rack",
+      "validasi": [
+        "Rack & bin is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "WH-SET-017",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Terminal name tampil dari baris pertama",
+      "url": "settings/terminal-name",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/terminal-name/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Terminal name*"
+      ]
+    },
+    {
+      "id": "WH-SET-018",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Role & access tampil dari baris pertama",
+      "url": "settings/role",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/role/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Role name*",
+        "Grade*",
+        "Menu access",
+        "Menu*",
+        "Set automatic sign out time"
+      ]
+    },
+    {
+      "id": "WH-SET-019",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Role & access berdasarkan Access",
+      "url": "settings/role",
+      "field": "Access"
+    },
+    {
+      "id": "WH-SET-020",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Warehouse tampil dari baris pertama",
+      "url": "settings/warehouse",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/warehouse/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Warehouse information.",
+        "Detailed warehouse information.",
+        "Warehouse name*",
+        "Code*",
+        "Phone number*",
+        "Province*",
+        "City*",
+        "District*",
+        "Sub-district*",
+        "Zip code*",
+        "Full address*"
+      ]
+    },
+    {
+      "id": "WH-SET-021",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Warehouse menghasilkan file Excel",
+      "url": "settings/warehouse",
+      "file": "^export-warehouse\\.xlsx$"
+    },
+    {
+      "id": "WH-SET-022",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Warehouse berdasarkan Province",
+      "url": "settings/warehouse",
+      "field": "Province"
+    },
+    {
+      "id": "WH-SET-023",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Rack Category tampil dari baris pertama",
+      "url": "settings/rack-category",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/setting/rack-category/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Rack type*",
+        "Grade*",
+        "Prefix*"
+      ]
+    }
+  ]
+}

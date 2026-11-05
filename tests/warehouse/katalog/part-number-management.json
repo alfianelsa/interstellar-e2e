@@ -1,0 +1,99 @@
+{
+  "modul": "Warehouse / Part Number Management",
+  "kasus": [
+    {
+      "id": "WH-PN-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Part number settings tampil",
+      "url": "part-number-management",
+      "teks": [
+        "Part number settings",
+        "Manage your inventory part number."
+      ],
+      "tombol": [
+        "Back",
+        "Export",
+        "Import",
+        "New part number",
+        "Active",
+        "Archived",
+        "Filters"
+      ],
+      "kolom": [
+        "Part number",
+        "Terminal name",
+        "Customer",
+        "Device type",
+        "Network type",
+        "Contactless",
+        "Description"
+      ]
+    },
+    {
+      "id": "WH-PN-002",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari part number yang tidak ada menampilkan tabel kosong",
+      "url": "part-number-management"
+    },
+    {
+      "id": "WH-PN-003",
+      "jenis": "form",
+      "prioritas": "P2",
+      "judul": "Form tambah part number menolak data kosong",
+      "url": "part-number-management",
+      "tombol": "New part number",
+      "judulForm": "Add part number",
+      "teks": [
+        "Part number",
+        "Terminal name",
+        "Device type",
+        "Network type",
+        "Contactless",
+        "Customer"
+      ],
+      "validasi": [
+        "Part number is required",
+        "Terminal name is required",
+        "Device type is required",
+        "Network type is required",
+        "Contactlessness is required",
+        "Customer is required"
+      ]
+    },
+    {
+      "id": "WH-PN-004",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Part number settings tampil dari baris pertama",
+      "url": "part-number-management",
+      "buka": "aksi",
+      "api": "/warehouse-api/v1/inventory-management/terminal/part-number/[^/]+/detail$",
+      "teks": [
+        "Part number information",
+        "Detail part number information.",
+        "Terminal Name",
+        "Device Type",
+        "Network Type"
+      ]
+    },
+    {
+      "id": "WH-PN-005",
+      "jenis": "export",
+      "prioritas": "P2",
+      "judul": "Export Part number settings menghasilkan file Excel",
+      "url": "part-number-management",
+      "file": "^export-partnumber\\.xlsx$"
+    },
+    {
+      "id": "WH-PN-006",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Part number settings berdasarkan Contactless",
+      "url": "part-number-management",
+      "field": "Contactless",
+      "kolom": "Contactless"
+    }
+  ]
+}

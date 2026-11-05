@@ -1,0 +1,135 @@
+{
+  "modul": "Content Management / Produk",
+  "kasus": [
+    {
+      "id": "CM-PRD-001",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Catalog tampil",
+      "url": "catalog",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Catalog",
+        "List of catalog product to sell."
+      ],
+      "tombol": [
+        "New product",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Product",
+        "price",
+        "Stock"
+      ]
+    },
+    {
+      "id": "CM-PRD-002",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Bank account tampil",
+      "url": "payment",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Bank account"
+      ],
+      "tombol": [
+        "New bank account",
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Bank",
+        "Bank account",
+        "Bank account number"
+      ]
+    },
+    {
+      "id": "CM-PRD-003",
+      "jenis": "halaman",
+      "prioritas": "P2",
+      "judul": "Halaman Auto reply message tampil",
+      "url": "auto-reply-message",
+      "teks": [
+        "Content management",
+        "Manage your team and preferences here.",
+        "Auto reply message",
+        "Message to be sent."
+      ],
+      "tombol": [
+        "Active",
+        "Archived"
+      ],
+      "kolom": [
+        "Message",
+        "Status"
+      ]
+    },
+    {
+      "id": "CM-PRD-004",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari catalog yang tidak ada menampilkan tabel kosong",
+      "url": "catalog"
+    },
+    {
+      "id": "CM-PRD-005",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari bank account yang tidak ada menampilkan tabel kosong",
+      "url": "payment"
+    },
+    {
+      "id": "CM-PRD-006",
+      "jenis": "cari",
+      "prioritas": "P3",
+      "judul": "Cari auto reply message yang tidak ada menampilkan tabel kosong",
+      "url": "auto-reply-message"
+    },
+    {
+      "id": "CM-PRD-007",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form bank account baru menolak data kosong",
+      "url": "payment",
+      "tombol": "New bank account",
+      "judulForm": "New bank",
+      "validasi": [
+        "Bank name is a required field",
+        "Bank account is a required field",
+        "Bank account number is a required field"
+      ]
+    },
+    {
+      "id": "CM-PRD-008",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Catalog tampil dari baris pertama",
+      "url": "catalog",
+      "buka": "aksi",
+      "api": "/content-management-api/v1/product/catalog/[^/]+$",
+      "teks": [
+        "Inventory",
+        "Product name",
+        "Price",
+        "Description",
+        "Product photo"
+      ]
+    },
+    {
+      "id": "CM-PRD-009",
+      "jenis": "detail",
+      "prioritas": "P2",
+      "judul": "Detail Auto reply message tampil dari baris pertama",
+      "url": "auto-reply-message",
+      "buka": "aksi",
+      "api": "/content-management-api/v1/product/email-message/[^/]+$",
+      "teks": [
+        "Subject",
+        "Guide"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1124 @@
+{
+  "modul": "Backoffice / Settings",
+  "kasus": [
+    {
+      "id": "BO-SET-001",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings General tampil",
+      "url": "settings/general",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Blur display settings",
+        "Set the background blur display.",
+        "Slideout menus",
+        "Modals"
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ]
+    },
+    {
+      "id": "BO-SET-002",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Role & access tampil",
+      "url": "settings/role",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Role & access",
+        "Manage your team role, hierarchy and page access here."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Role name",
+        "Grade",
+        "Access",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-003",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Area tampil",
+      "url": "settings/region/area",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Area & region",
+        "Manage area and administrative region",
+        "Area",
+        "List of area"
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Area",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-004",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Administrative region tampil",
+      "url": "settings/region/territory",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Area & region",
+        "Manage area and administrative region",
+        "Administrative region",
+        "List of administrative region."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Province",
+        "City",
+        "District",
+        "Sub-district",
+        "Zip code",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-005",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Warehouse tampil",
+      "url": "settings/warehouse",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Warehouse",
+        "List of registered warehouse."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Warehouse name",
+        "Phone number",
+        "Coverage",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-006",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Issue tampil",
+      "url": "settings/issue",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Issue",
+        "List of issue."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Issue",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-007",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Peripheral tampil",
+      "url": "settings/peripheral",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Peripheral",
+        "List of peripheral."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Peripheral",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-008",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Service type tampil",
+      "url": "settings/service-type",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Service type",
+        "List of terminal’s service type."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Service type",
+        "Job category available",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-009",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings MCC tampil",
+      "url": "settings/merchant/mcc",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Merchant",
+        "Manage items related to merchants.",
+        "MCC",
+        "List of Merchant’s category code."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Code",
+        "Category name",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-010",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings PIC Position tampil",
+      "url": "settings/merchant/pic",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Merchant",
+        "Manage items related to merchants.",
+        "PIC Position",
+        "List of merchant’s PIC position."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Position name",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-011",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Job order flow tampil",
+      "url": "settings/job-order",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Job order flow",
+        "Manage the workflow escalation based on job categories."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Scenario name",
+        "Job order category",
+        "Channel source",
+        "Device type",
+        "Project",
+        "Assignee",
+        "Change to"
+      ]
+    },
+    {
+      "id": "BO-SET-012",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Detail root cause tampil",
+      "url": "settings/root-cause-page/detail-root-cause",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Root cause",
+        "Manage items related to root cause from technician visit.",
+        "Detail root cause",
+        "List of detail root cause."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Detail root cause",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-013",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Checklist PM priority tampil",
+      "url": "settings/checklist/PM-priority",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Checklist",
+        "Set checklist for preventive maintenance.",
+        "PM priority",
+        "List of PM priority option."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "PM priority",
+        "Data property"
+      ]
+    },
+    {
+      "id": "BO-SET-014",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Signature type tampil",
+      "url": "settings/signature/signature-type",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Signature",
+        "Set signature type for terminal diagnostic.",
+        "Signature type",
+        "List of signature type."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Signature type"
+      ]
+    },
+    {
+      "id": "BO-SET-015",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Signature binding tampil",
+      "url": "settings/signature/signature-binding",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Signature",
+        "Set signature type for terminal diagnostic.",
+        "Signature binding"
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Customer",
+        "Signature"
+      ]
+    },
+    {
+      "id": "BO-SET-016",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings TEM destination tampil",
+      "url": "settings/destination",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "Destination config",
+        "List of destinations."
+      ],
+      "tombol": [
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature",
+        "TEM destination"
+      ],
+      "kolom": [
+        "Customer",
+        "Primary IP",
+        "Primary port",
+        "Secondary IP",
+        "Secondary port",
+        "Timeout",
+        "Max. retry",
+        "Crendetial"
+      ]
+    },
+    {
+      "id": "BO-SET-017",
+      "jenis": "halaman",
+      "prioritas": "P3",
+      "judul": "Halaman Settings Omnisearch tampil",
+      "url": "settings/omnisearch",
+      "teks": [
+        "Settings",
+        "Configuration of all aspects of the system.",
+        "User are not connected to internet data during working hours",
+        "Jakarta Barat"
+      ],
+      "tombol": [
+        "Back to settings",
+        "General",
+        "Role & access",
+        "Area & region",
+        "Issue",
+        "Peripheral",
+        "Service type",
+        "Merchant",
+        "Job order flow",
+        "Root cause",
+        "Checklist",
+        "Signature"
+      ]
+    },
+    {
+      "id": "BO-SET-018",
+      "jenis": "tab",
+      "prioritas": "P2",
+      "judul": "Pindah antar tab Settings",
+      "url": "settings/general",
+      "tab": [
+        {
+          "nama": "Role & access",
+          "url": "settings/role$"
+        },
+        {
+          "nama": "Area & region",
+          "url": "settings/region/area$"
+        },
+        {
+          "nama": "Issue",
+          "url": "settings/issue$"
+        },
+        {
+          "nama": "Peripheral",
+          "url": "settings/peripheral$"
+        },
+        {
+          "nama": "Service type",
+          "url": "settings/service-type$"
+        },
+        {
+          "nama": "Merchant",
+          "url": "settings/merchant/mcc$"
+        },
+        {
+          "nama": "Job order flow",
+          "url": "settings/job-order$"
+        },
+        {
+          "nama": "Root cause",
+          "url": "settings/root-cause-page/detail-root-cause$"
+        },
+        {
+          "nama": "Checklist",
+          "url": "settings/checklist/PM-priority$"
+        },
+        {
+          "nama": "Signature",
+          "url": "settings/signature/signature-type$"
+        },
+        {
+          "nama": "TEM destination",
+          "url": "settings/destination$"
+        },
+        {
+          "nama": "General",
+          "url": "settings/general$"
+        }
+      ]
+    },
+    {
+      "id": "BO-SET-019",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Role & access baru menolak data kosong",
+      "url": "settings/role",
+      "tombol": "New role",
+      "judulForm": "Add role",
+      "validasi": [
+        "name is a required field",
+        "grade is a required field",
+        "access is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-020",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Area baru menolak data kosong",
+      "url": "settings/region/area",
+      "tombol": "New area",
+      "judulForm": "Add area",
+      "validasi": [
+        "name is a required field",
+        "Teritory Type is required field",
+        "Coverage is required field"
+      ]
+    },
+    {
+      "id": "BO-SET-021",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Administrative region baru menolak data kosong",
+      "url": "settings/region/territory",
+      "tombol": "New administrative region",
+      "judulForm": "Add administrative region",
+      "validasi": [
+        "province is a required field",
+        "city is a required field",
+        "district is a required field",
+        "sub_district is a required field",
+        "zip_code is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-022",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Warehouse baru menolak data kosong",
+      "url": "settings/warehouse",
+      "tombol": "New warehouse",
+      "judulForm": "Add warehouse",
+      "validasi": [
+        "name is a required field",
+        "phone_number is a required field",
+        "province is a required field",
+        "city is a required field",
+        "district is a required field",
+        "sub_district is a required field",
+        "zip_code is a required field",
+        "address is a required field",
+        "territory_type is a required field",
+        "adm_areas is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-023",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Issue baru menolak data kosong",
+      "url": "settings/issue",
+      "tombol": "New issue",
+      "judulForm": "Add issue",
+      "validasi": [
+        "issue is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "BO-SET-024",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Peripheral baru menolak data kosong",
+      "url": "settings/peripheral",
+      "tombol": "New peripheral",
+      "judulForm": "Add peripheral",
+      "validasi": [
+        "name is a required field"
+      ],
+      "tutup": "Close"
+    },
+    {
+      "id": "BO-SET-025",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Service type baru menolak data kosong",
+      "url": "settings/service-type",
+      "tombol": "New service type",
+      "judulForm": "Add service type",
+      "validasi": [
+        "service_type is a required field",
+        "job_category is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-026",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form MCC baru menolak data kosong",
+      "url": "settings/merchant/mcc",
+      "tombol": "New MCC",
+      "judulForm": "Add MCC",
+      "validasi": [
+        "code is a required field",
+        "category is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-027",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Job order flow baru menolak data kosong",
+      "url": "settings/job-order",
+      "tombol": "New flow",
+      "judulForm": "Add flow",
+      "validasi": [
+        "name is a required field",
+        "job_category is a required field",
+        "channel_source is a required field",
+        "device_type is a required field",
+        "project is a required field",
+        "assignee is required"
+      ]
+    },
+    {
+      "id": "BO-SET-028",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Detail root cause baru menolak data kosong",
+      "url": "settings/root-cause-page/detail-root-cause",
+      "tombol": "New detail root cause",
+      "judulForm": "Add new detail root cause",
+      "validasi": [
+        "Detail root cause is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-029",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form Checklist PM priority baru menolak data kosong",
+      "url": "settings/checklist/PM-priority",
+      "tombol": "New option",
+      "judulForm": "Add new detail checklist",
+      "validasi": [
+        "name is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-030",
+      "jenis": "form",
+      "prioritas": "P3",
+      "judul": "Form TEM destination baru menolak data kosong",
+      "url": "settings/destination",
+      "tombol": "New destination",
+      "judulForm": "Add Destination",
+      "validasi": [
+        "Customer is a required field",
+        "Primary IP is a required field",
+        "Primary port is a required field",
+        "Secondary IP is a required field",
+        "Secondary port is a required field",
+        "Timeout is a required field",
+        "Max retry is a required field",
+        "User is a required field",
+        "Password is a required field"
+      ]
+    },
+    {
+      "id": "BO-SET-031",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Role & access tampil dari baris pertama",
+      "url": "settings/role",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/role/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Role name*",
+        "Grade*",
+        "Menu access",
+        "Menu*",
+        "Set automatic sign out time"
+      ]
+    },
+    {
+      "id": "BO-SET-032",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Role & access menampilkan data lain",
+      "url": "settings/role"
+    },
+    {
+      "id": "BO-SET-033",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Role & access berdasarkan Access",
+      "url": "settings/role",
+      "field": "Access"
+    },
+    {
+      "id": "BO-SET-034",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Area tampil dari baris pertama",
+      "url": "settings/region/area",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/area/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Area name*",
+        "Teritory type*",
+        "Coverage*"
+      ]
+    },
+    {
+      "id": "BO-SET-035",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Administrative region tampil dari baris pertama",
+      "url": "settings/region/territory",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/admonistrative-area/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Province*",
+        "City*",
+        "District*",
+        "Sub-district*",
+        "Zip code*"
+      ]
+    },
+    {
+      "id": "BO-SET-036",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Administrative region berdasarkan District",
+      "url": "settings/region/territory",
+      "field": "District",
+      "kolom": "District"
+    },
+    {
+      "id": "BO-SET-037",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Warehouse tampil dari baris pertama",
+      "url": "settings/warehouse",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/warehouse/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Warehouse information.",
+        "Detailed warehouse information.",
+        "Warehouse name*",
+        "Phone number*",
+        "Province*",
+        "City*",
+        "District*",
+        "Sub-district*",
+        "Zip code*",
+        "Full address*",
+        "Service point"
+      ]
+    },
+    {
+      "id": "BO-SET-038",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Warehouse menampilkan data lain",
+      "url": "settings/warehouse"
+    },
+    {
+      "id": "BO-SET-039",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Warehouse berdasarkan Coverage Type",
+      "url": "settings/warehouse",
+      "field": "Coverage Type"
+    },
+    {
+      "id": "BO-SET-040",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Issue tampil dari baris pertama",
+      "url": "settings/issue",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/terminal/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Issue*"
+      ]
+    },
+    {
+      "id": "BO-SET-041",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export Issue menghasilkan file Excel",
+      "url": "settings/issue",
+      "file": "^export-Terminal-status\\.xlsx$"
+    },
+    {
+      "id": "BO-SET-042",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Issue menampilkan data lain",
+      "url": "settings/issue"
+    },
+    {
+      "id": "BO-SET-043",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Peripheral tampil dari baris pertama",
+      "url": "settings/peripheral",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/terminal/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Peripheral*"
+      ]
+    },
+    {
+      "id": "BO-SET-044",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export Peripheral menghasilkan file Excel",
+      "url": "settings/peripheral",
+      "file": "^export-Terminal-status\\.xlsx$"
+    },
+    {
+      "id": "BO-SET-045",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Service type tampil dari baris pertama",
+      "url": "settings/service-type",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/service-type/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Service type*",
+        "Job category available*"
+      ]
+    },
+    {
+      "id": "BO-SET-046",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Service type berdasarkan Job Category",
+      "url": "settings/service-type",
+      "field": "Job Category"
+    },
+    {
+      "id": "BO-SET-047",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail MCC tampil dari baris pertama",
+      "url": "settings/merchant/mcc",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/merchant-category-type/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Code*",
+        "Merchant category*"
+      ]
+    },
+    {
+      "id": "BO-SET-048",
+      "jenis": "export",
+      "prioritas": "P3",
+      "judul": "Export MCC menghasilkan file Excel",
+      "url": "settings/merchant/mcc",
+      "file": "^export-mcc\\.xlsx$"
+    },
+    {
+      "id": "BO-SET-049",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya MCC menampilkan data lain",
+      "url": "settings/merchant/mcc"
+    },
+    {
+      "id": "BO-SET-050",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter MCC berdasarkan Category",
+      "url": "settings/merchant/mcc",
+      "field": "Category"
+    },
+    {
+      "id": "BO-SET-051",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail PIC Position tampil dari baris pertama",
+      "url": "settings/merchant/pic",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/pic-position/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Position name*"
+      ]
+    },
+    {
+      "id": "BO-SET-052",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Job order flow tampil dari baris pertama",
+      "url": "settings/job-order",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/job-order-flow/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Scenario name*",
+        "Parameter",
+        "Job order category*",
+        "Channel source*",
+        "Device type*",
+        "Project*",
+        "Assignee flow*",
+        "Change flow"
+      ]
+    },
+    {
+      "id": "BO-SET-053",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Job order flow menampilkan data lain",
+      "url": "settings/job-order"
+    },
+    {
+      "id": "BO-SET-054",
+      "jenis": "filter",
+      "prioritas": "P2",
+      "judul": "Filter Job order flow berdasarkan Project",
+      "url": "settings/job-order",
+      "field": "Project",
+      "kolom": "Project"
+    },
+    {
+      "id": "BO-SET-055",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Detail root cause tampil dari baris pertama",
+      "url": "settings/root-cause-page/detail-root-cause",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/detail-root-cause/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Detail root cause*"
+      ]
+    },
+    {
+      "id": "BO-SET-056",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Detail root cause menampilkan data lain",
+      "url": "settings/root-cause-page/detail-root-cause"
+    },
+    {
+      "id": "BO-SET-057",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail Signature type tampil dari baris pertama",
+      "url": "settings/signature/signature-type",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/signature/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Signature type*"
+      ]
+    },
+    {
+      "id": "BO-SET-058",
+      "jenis": "halaman-berikut",
+      "prioritas": "P3",
+      "judul": "Halaman berikutnya Signature binding menampilkan data lain",
+      "url": "settings/signature/signature-binding"
+    },
+    {
+      "id": "BO-SET-059",
+      "jenis": "detail",
+      "prioritas": "P3",
+      "judul": "Detail TEM destination tampil dari baris pertama",
+      "url": "settings/destination",
+      "buka": "aksi",
+      "api": "/backoffice-api/v1/setting/destination/[^/]+$",
+      "teks": [
+        "Edit the information below.",
+        "Customer*",
+        "Primary IP*",
+        "Primary port*",
+        "Secondary IP*",
+        "Secondary port*",
+        "Timeout*",
+        "Max retry*",
+        "User*"
+      ]
+    }
+  ]
+}
