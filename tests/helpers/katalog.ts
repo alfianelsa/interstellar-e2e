@@ -74,6 +74,11 @@ export type KasusKatalog = {
       teks: string[];
       /** Tab di detail yang diklik satu per satu (API-nya harus sukses). */
       tab?: string[];
+      /**
+       * Opsional: buka baris pertama yang memuat teks ini (mis. status "In progress"), bukan baris pertama tabel.
+       * Pakai kalau cara buka detail berbeda per status, supaya test tidak bergantung urutan data dev.
+       */
+      baris?: string;
     }
   | {
       jenis: 'export';
@@ -205,8 +210,11 @@ async function jalankan(page: Page, k: KasusKatalog) {
     }
 
     case 'detail': {
-      const baris = barisData(page).first();
-      await expect(baris, 'tabel punya minimal 1 baris data (data dev kosong?)').toBeVisible();
+      const baris = (k.baris ? barisData(page).filter({ hasText: k.baris }) : barisData(page)).first();
+      await expect(
+        baris,
+        k.baris ? `tabel punya minimal 1 baris "${k.baris}" (data dev kosong?)` : 'tabel punya minimal 1 baris data (data dev kosong?)',
+      ).toBeVisible();
       const respons = page.waitForResponse((r) => r.request().method() === 'GET' && new RegExp(k.api).test(new URL(r.url()).pathname));
       if (k.buka === 'aksi') await baris.getByRole('cell').last().getByRole('button').first().click();
       else await baris.getByRole('cell').first().click();
@@ -313,7 +321,9 @@ export function daftarkanKatalog(folderApp: string) {
         const judul = `TC-${k.id} ${k.judul}`;
         test(judul, async ({ page }) => {
           // Bug aplikasi yang sudah diketahui: test dilewati (bukan dihapus) sampai bug-nya diperbaiki.
-          test.fixme(!!k.fixme, k.fixme);
+          // E2E_CEK_PERBAIKAN=1 → fixme yang "Sudah diperbaiki di kode" tetap dijalankan (cek setelah deploy).
+          const cekPerbaikan = !!process.env.E2E_CEK_PERBAIKAN && /Sudah diperbaiki di kode/.test(k.fixme ?? '');
+          test.fixme(!!k.fixme && !cekPerbaikan, k.fixme);
           if (k.catatan) test.info().annotations.push({ type: 'catatan', description: k.catatan });
           await jalankan(page, k);
         });

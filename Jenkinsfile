@@ -51,6 +51,7 @@ pipeline {
             -e HOME=/tmp/home -e CI=true \
             -e BASE_HOST -e GREP -e PROJECT -e E2E_EMAIL -e E2E_PASSWORD \
             -e E2E_IMAP_HOST -e E2E_IMAP_PORT -e E2E_IMAP_USER -e E2E_IMAP_PASSWORD \
+            -e E2E_RATE_LIMIT_SKIP_KEY \
             "$PW_IMAGE" \
             sh -c 'npm ci --no-audit --no-fund && npx playwright test $PROJECT ${GREP:+--grep "$GREP"}'
         '''

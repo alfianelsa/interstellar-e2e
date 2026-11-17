@@ -3,7 +3,7 @@
 // Dipakai tests/<app>/auth.setup.ts. Test biasa TIDAK perlu login ulang (pakai sesi dari setup).
 
 import { expect, type Page } from '@playwright/test';
-import { ambilOtp, tandaiInbox } from './email';
+import { ambilOtpDenganUid, tandaiInbox } from './email';
 
 export async function isiFormLogin(page: Page, email: string, password: string) {
   await page.goto('login');
@@ -16,6 +16,8 @@ export async function isiFormLogin(page: Page, email: string, password: string) 
 export async function isiOtp(page: Page, otp: string) {
   const kotak = page.locator('input[maxlength="1"]');
   await expect(kotak).toHaveCount(6);
+  // Kosongkan dulu: dipakai ulang kalau OTP sebelumnya ditolak.
+  for (let i = 0; i < 6; i++) await kotak.nth(i).fill('');
   await kotak.first().click();
   await page.keyboard.type(otp);
   await page.getByRole('button', { name: 'Verify email' }).click();
@@ -48,8 +50,26 @@ export async function login(page: Page, email: string, password: string) {
     console.log(`\n>>> E2E_IMAP_HOST kosong: buka email ${email}, ketik OTP di browser lalu klik "Verify email" (maks 150 detik).\n`);
     await expect(welcome).toBeVisible({ timeout: 150_000 });
   } else {
-    const otp = await ambilOtp(email, sejak, { mulaiUid });
-    await isiOtp(page, otp);
+    // Email OTP semua app isinya sama. Email dari login sebelumnya (mis. setup app lain yang gagal)
+    // bisa telat masuk dan terbaca duluan -> server membalas "Wrong OTP". Kalau begitu, ambil email
+    // OTP yang lebih baru dan coba lagi.
+    let uidMulai = mulaiUid;
+    for (let percobaan = 1; ; percobaan++) {
+      const { otp, uid } = await ambilOtpDenganUid(email, sejak, { mulaiUid: uidMulai });
+      const responsOtp = page.waitForResponse(
+        (res) => res.request().method() === 'POST' && /\/v1\/auth\/check-otp/.test(res.url()),
+        { timeout: 30_000 },
+      );
+      await isiOtp(page, otp);
+      const ro = await responsOtp;
+      if (ro.ok()) break;
+      const pesan = String((await ro.json().catch(() => ({})))?.message ?? '');
+      if (percobaan >= 3 || !/wrong otp/i.test(pesan)) {
+        throw new Error(`OTP ditolak server (HTTP ${ro.status()}): ${pesan.slice(0, 200)}`);
+      }
+      console.warn(`OTP dari email UID ${uid} ditolak ("${pesan}"), coba email OTP yang lebih baru`);
+      uidMulai = uid + 1;
+    }
     // Setelah OTP benar, app menyimpan cookie token lalu membuka halaman Welcome.
     await expect(welcome).toBeVisible({ timeout: 20_000 });
   }

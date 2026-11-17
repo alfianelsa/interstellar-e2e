@@ -71,6 +71,7 @@
       "judul": "Detail Stock opname tampil dari baris pertama",
       "url": "stock-opname-management/stock-opname",
       "buka": "aksi",
+      "baris": "In progress",
       "api": "/warehouse-api/v1/stock-opname/rack/[^/]+$",
       "urlDetail": "stock-opname-management/[^/]+",
       "teks": [

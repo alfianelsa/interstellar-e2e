@@ -33,6 +33,12 @@ type Fixture = {
 
 const API_INTERSTELLAR = /-api\/v1\//;
 
+// be-backoffice membatasi 60 request/menit per token (routes/v1.js) dan membalas HTTP 500 kalau lewat.
+// Test jauh lebih cepat dari manusia, jadi sesekali kena. Kalau E2E_RATE_LIMIT_SKIP_KEY diisi, request API
+// backoffice dikirim dengan header `skip-key` (pengecualian bawaan backend). Nilainya cuma lewat env/credential.
+const SKIP_KEY = process.env.E2E_RATE_LIMIT_SKIP_KEY;
+const API_BACKOFFICE = /\/backoffice-api\/v1\//;
+
 export const test = dasar.extend<Opsi & Fixture>({
   izinkanApi: [[], { option: true }],
   izinkan5xx: [[], { option: true }],
@@ -42,7 +48,12 @@ export const test = dasar.extend<Opsi & Fixture>({
       const terblokir: string[] = [];
       await context.route(API_INTERSTELLAR, (route) => {
         const req = route.request();
-        if (req.method() === 'GET' || izinkanApi.some((p) => p.test(req.url()))) return route.continue();
+        if (req.method() === 'GET' || izinkanApi.some((p) => p.test(req.url()))) {
+          if (SKIP_KEY && API_BACKOFFICE.test(req.url())) {
+            return route.continue({ headers: { ...req.headers(), 'skip-key': SKIP_KEY } });
+          }
+          return route.continue();
+        }
         terblokir.push(`${req.method()} ${req.url().replace(/^https?:\/\/[^/]+/, '')}`);
         return route.abort('blockedbyclient');
       });
